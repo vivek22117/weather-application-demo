@@ -3,7 +3,7 @@ package com.weather.api.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.sql.Date;
+import javax.validation.constraints.Email;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,10 +12,14 @@ import java.util.List;
 public class User {
 
     @Id
-    @GeneratedValue
-    private String userName;
+    @Column(unique = true, nullable = false)
+    @Email
+    private String username;
+
+    @Column(nullable = false)
     private String password;
-    private Date dob;
+
+    private String dob;
 
     @ManyToMany
     private List<WeatherData> weather = new ArrayList<>();
