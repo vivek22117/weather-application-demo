@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 @Data
-public class User {
+public class Profile {
 
     @Id
     @Column(unique = true, nullable = false)

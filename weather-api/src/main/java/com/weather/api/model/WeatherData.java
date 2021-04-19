@@ -36,5 +36,5 @@ public class WeatherData {
     private Double minTemperature;
 
     @ManyToMany(mappedBy = "weather")
-    private List<User> user = new ArrayList<>();
+    private List<Profile> profile = new ArrayList<>();
 }
