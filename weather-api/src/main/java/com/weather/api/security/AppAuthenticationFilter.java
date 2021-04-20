@@ -1,6 +1,6 @@
 package com.weather.api.security;
 
-import com.weather.api.service.UserDetailsServiceImpl;
+import com.weather.api.service.ProfileDetailsServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -19,13 +19,13 @@ import java.io.IOException;
 
 @Component
 @Slf4j
-public class AuthenticationFilter extends OncePerRequestFilter {
+public class AppAuthenticationFilter extends OncePerRequestFilter {
 
-    private final UserDetailsServiceImpl userDetailsService;
+    private final ProfileDetailsServiceImpl userDetailsService;
     private final AppJwtTokenUtil jwtTokenUtil;
 
     @Autowired
-    public AuthenticationFilter(UserDetailsServiceImpl userDetailsService, AppJwtTokenUtil jwtTokenUtil) {
+    public AppAuthenticationFilter(ProfileDetailsServiceImpl userDetailsService, AppJwtTokenUtil jwtTokenUtil) {
         this.userDetailsService = userDetailsService;
         this.jwtTokenUtil = jwtTokenUtil;
     }
