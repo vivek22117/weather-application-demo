@@ -1,11 +1,11 @@
 package com.weather.api.config;
 
-import com.weather.api.repository.UserRepository;
-import com.weather.api.service.UserDetailsServiceImpl;
+import com.weather.api.security.AppAuthenticationFilter;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -15,6 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -22,37 +23,47 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final UserDetailsService userDetailsService;
+    private final AppAuthenticationFilter authenticationFilter;
 
-    public SecurityConfig(UserDetailsService userDetailsService) {
+    public SecurityConfig(@Qualifier("profileDetailsServiceImpl") UserDetailsService userDetailsService,
+                          AppAuthenticationFilter authenticationFilter) {
         this.userDetailsService = userDetailsService;
+        this.authenticationFilter = authenticationFilter;
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return new Argon2PasswordEncoder();
     }
 
-    @Bean
-    @Autowired
-    public UserDetailsService userDetailsService(UserRepository userRepository) {
-        return new UserDetailsServiceImpl(userRepository);
-    }
 
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.cors().and().csrf().disable()
                 .authorizeRequests()
-                .antMatchers("*")
-                .permitAll();
-
-        httpSecurity.csrf().disable();
+                .antMatchers("/api/auth/**")
+                .permitAll()
+                .antMatchers(HttpMethod.GET, "/api/**")
+                .permitAll()
+                .antMatchers("/internal",
+                        "/h2/**",
+                        "/h2-console/**",
+                        "/v2/api-docs",
+                        "/configuration/ui",
+                        "/swagger-resources/**",
+                        "/configuration/security",
+                        "/swagger-ui/**",
+                        "/webjars/**")
+                .permitAll()
+                .anyRequest()
+                .authenticated();
         httpSecurity.headers().frameOptions().disable();
-
+        httpSecurity.addFilterBefore(authenticationFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
+        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
     }
 
     @Bean(BeanIds.AUTHENTICATION_MANAGER)
