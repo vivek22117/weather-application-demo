@@ -8,6 +8,7 @@ import com.weather.api.repository.UserRepository;
 import com.weather.api.security.AppJwtTokenUtil;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -25,6 +26,7 @@ import static com.weather.api.util.AppUtility.JWT_TOKEN_VALIDITY;
 
 @Service
 @Transactional
+@Slf4j
 public class AuthServiceImpl implements AuthService {
 
     private final PasswordEncoder passwordEncoder;
@@ -56,19 +58,25 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public AuthenticationResponse login(LoginRequest loginRequest) {
-        Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
-                loginRequest.getUsername(), loginRequest.getPassword()));
-        SecurityContextHolder.getContext().setAuthentication(authenticate);
+        try {
+            Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
+                    loginRequest.getUsername(), loginRequest.getPassword()));
+            SecurityContextHolder.getContext().setAuthentication(authenticate);
 
-        User principal = (User) authenticate.getPrincipal();
+            User principal = (User) authenticate.getPrincipal();
 
-        String token = jwtTokenUtil.generateTokenWithUsername(principal.getUsername());
+            String token = jwtTokenUtil.generateTokenWithUsername(principal.getUsername());
+            return AuthenticationResponse.builder()
+                    .authenticationToken(token)
+                    .username(loginRequest.getUsername())
+                    .expiresAt(Instant.now().plusMillis(JWT_TOKEN_VALIDITY * 1000))
+                    .build();
+        } catch (Exception ex) {
+            log.error("Error while login api call" + ex.getMessage());
+        }
 
-        return AuthenticationResponse.builder()
-                .authenticationToken(token)
-                .username(loginRequest.getUsername())
-                .expiresAt(Instant.now().plusMillis(JWT_TOKEN_VALIDITY * 1000))
-                .build();
+        return null;
+
     }
 
     @Override
