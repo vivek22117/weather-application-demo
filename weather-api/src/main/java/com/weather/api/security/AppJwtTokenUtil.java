@@ -4,29 +4,19 @@ import com.weather.api.exception.ApplicationException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.security.*;
-import java.security.cert.CertificateException;
 import java.util.Date;
 
 import static com.weather.api.util.AppUtility.JWT_TOKEN_VALIDITY;
-import static java.lang.Runtime.getRuntime;
 
 @Component
 @Slf4j
 public class AppJwtTokenUtil {
-
-    @Value("${secret.key}")
-    private String secret;
 
     private KeyPair keyPair;
 
