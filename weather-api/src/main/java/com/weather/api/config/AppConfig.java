@@ -1,5 +1,7 @@
 package com.weather.api.config;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -11,6 +13,11 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class AppConfig {
+
+    @Bean
+    public Gson createGson(){
+        return new GsonBuilder().setPrettyPrinting().create();
+    }
 
     @Bean("weather-client")
     public RestTemplate weatherRestTemplate() {
