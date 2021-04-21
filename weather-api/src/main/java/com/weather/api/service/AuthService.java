@@ -9,9 +9,11 @@ import java.util.Optional;
 
 public interface AuthService {
 
-    Optional<Profile> signup(RegisterRequest request);
+    Profile signup(RegisterRequest request);
 
     AuthenticationResponse login(LoginRequest loginRequest);
 
     void logout(Profile profile);
+
+    Profile getCurrentUser();
 }

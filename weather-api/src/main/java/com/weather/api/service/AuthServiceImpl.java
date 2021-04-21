@@ -4,23 +4,20 @@ import com.weather.api.model.AuthenticationResponse;
 import com.weather.api.model.LoginRequest;
 import com.weather.api.model.RegisterRequest;
 import com.weather.api.model.Profile;
-import com.weather.api.repository.UserRepository;
+import com.weather.api.repository.ProfileRepository;
 import com.weather.api.security.AppJwtTokenUtil;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
-import java.util.Date;
-import java.util.Optional;
 
 import static com.weather.api.util.AppUtility.JWT_TOKEN_VALIDITY;
 
@@ -30,30 +27,39 @@ import static com.weather.api.util.AppUtility.JWT_TOKEN_VALIDITY;
 public class AuthServiceImpl implements AuthService {
 
     private final PasswordEncoder passwordEncoder;
-    private final UserRepository userRepository;
+    private final ProfileRepository profileRepository;
     private final AuthenticationManager authenticationManager;
     private final AppJwtTokenUtil jwtTokenUtil;
 
-    public AuthServiceImpl(PasswordEncoder passwordEncoder, UserRepository userRepository,
+    public AuthServiceImpl(PasswordEncoder passwordEncoder, ProfileRepository profileRepository,
                            AuthenticationManager authenticationManager, AppJwtTokenUtil jwtTokenUtil) {
         this.passwordEncoder = passwordEncoder;
-        this.userRepository = userRepository;
+        this.profileRepository = profileRepository;
         this.authenticationManager = authenticationManager;
         this.jwtTokenUtil = jwtTokenUtil;
+    }
+
+    @Transactional(readOnly = true)
+    @Override
+    public Profile getCurrentUser() {
+        User principal = (User) SecurityContextHolder.getContext()
+                .getAuthentication().getPrincipal();
+        return profileRepository.getUserByUsername(principal.getUsername())
+                .orElseThrow(() -> new UsernameNotFoundException("Username not found - " + principal.getUsername()));
     }
 
 
     @Transactional
     @Override
-    public Optional<Profile> signup(RegisterRequest request) {
+    public Profile signup(RegisterRequest request) {
         Profile profile = new Profile();
 
         profile.setUsername(request.getUsername());
         profile.setDob(request.getDob());
         profile.setPassword(passwordEncoder.encode(request.getPassword()));
 
-        userRepository.saveUser(profile);
-        return Optional.of(profile);
+        profileRepository.saveUser(profile);
+        return profile;
     }
 
     @Override
