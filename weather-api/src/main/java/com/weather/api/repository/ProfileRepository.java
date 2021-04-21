@@ -9,4 +9,6 @@ public interface ProfileRepository {
     void saveUser(Profile profile);
 
     Optional<Profile> getUserByUsername(String username);
+
+    void updateUser(Profile currentUser);
 }

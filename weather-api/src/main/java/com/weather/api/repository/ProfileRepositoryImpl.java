@@ -33,6 +33,11 @@ public class ProfileRepositoryImpl implements ProfileRepository {
     return Optional.of(query.uniqueResult());
   }
 
+  @Override
+  public void updateUser(Profile currentUser) {
+    getSession().update(currentUser);
+  }
+
   private Session getSession() {
     Session session = factory.getCurrentSession();
     if(session == null) {

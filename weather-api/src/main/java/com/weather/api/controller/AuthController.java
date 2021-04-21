@@ -24,12 +24,14 @@ public class AuthController {
     @PostMapping("/signup")
     public ResponseEntity<String> signUp(@RequestBody RegisterRequest request) {
         authService.signup(request);
-        return new ResponseEntity<>("User Registration Successful!", HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body("User registration is successful for " + request.getUsername());
     }
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping("/login")
-    public AuthenticationResponse login(@RequestBody LoginRequest loginRequest) {
-        return authService.login(loginRequest);
+    public ResponseEntity<AuthenticationResponse> login(@RequestBody LoginRequest loginRequest) {
+        AuthenticationResponse authenticationResponse = authService.login(loginRequest);
+        return ResponseEntity.status(HttpStatus.OK).body(authenticationResponse);
     }
 }
