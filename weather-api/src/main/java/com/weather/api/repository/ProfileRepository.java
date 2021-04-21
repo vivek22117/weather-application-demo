@@ -4,7 +4,7 @@ import com.weather.api.model.Profile;
 
 import java.util.Optional;
 
-public interface UserRepository {
+public interface ProfileRepository {
 
     void saveUser(Profile profile);
 
