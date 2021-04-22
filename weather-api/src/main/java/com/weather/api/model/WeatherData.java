@@ -42,8 +42,11 @@ public class WeatherData {
     @Column(name = "min_temperature")
     private Double minTemperature;
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "weather")
-    private List<Profile> profile = new ArrayList<>();
+    @ManyToMany
+    @JoinTable(name = "weather_profile",
+            joinColumns = {@JoinColumn(name = "city_name")},
+            inverseJoinColumns = {@JoinColumn(name = "username")})
+    private Set<Profile> profile = new HashSet<>();
 
     public void addProfile(Profile data) {
         this.profile.add(data);
