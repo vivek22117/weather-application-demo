@@ -6,7 +6,9 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -23,12 +25,8 @@ public class Profile {
 
     private String dob;
 
-
-    @ManyToMany
-    @JoinTable(name = "profile_weather",
-            joinColumns = {@JoinColumn(name = "username")},
-            inverseJoinColumns = {@JoinColumn(name = "city_name")})
-    private List<WeatherData> weather = new ArrayList<>();
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "profile")
+    private Set<WeatherData> weather = new HashSet<>();
 
 
     public void addWeatherData(WeatherData data) {
