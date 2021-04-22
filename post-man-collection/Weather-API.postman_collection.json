@@ -1,0 +1,1928 @@
+{
+	"id": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+	"name": "Weather-API",
+	"description": "",
+	"order": [
+		"9da7cade-05a4-c07b-3d0b-fe8d1f9bf659",
+		"93cbc693-efcd-8c11-84df-4d339b87ad37",
+		"9057ae75-c645-56d4-9acb-7e79edcf7996",
+		"89b3be9b-0c23-75c8-8adb-84627fb588fd",
+		"9d5c6513-15b3-1ad8-aaab-c62b3eb4e1e3",
+		"dfd4b9a2-505e-97c0-667d-47178d161baf",
+		"37744af5-3465-88ad-8fc6-aaa566d58919",
+		"6af00c74-68bf-7e57-4001-a604d2c3368e",
+		"62807a25-0b77-a5e8-25ba-70ca0c3af77b",
+		"ceabd8e0-e343-591b-1bb2-0d1373b2d289",
+		"0ecc7f6f-b01c-105e-43a9-692981354a4c",
+		"8c4673a5-f819-b1b1-c546-2a9fa8cdec39",
+		"2e0b4d00-74e9-2304-8dc4-9be3937e2d54",
+		"afce2be7-dcee-4634-ad27-addb68b6425d",
+		"bd7d5d36-659c-d62a-ddc8-bb95afc112fc",
+		"681cc07a-1fd3-4260-bc20-57322e8e5c1c",
+		"5f9bce96-9b2b-9e8b-3021-e57f887f2a5f",
+		"3059b96c-9e53-4278-3044-77fb3a064383",
+		"8fc48ad9-aaf1-337c-464a-19b5d73b8051",
+		"c94c33df-8558-fe1d-f670-daad9de28b3e",
+		"d7ba36e8-ef2f-fe18-b605-e8be631b463e",
+		"3093676e-ba2a-7a63-56e4-da804fc298ef",
+		"fe82f5cc-2fab-975b-b680-b8513052f207",
+		"ca4781dd-bdc7-59d6-ab44-b4e8c8fb66c7",
+		"44be482a-7ea7-6dc7-0591-7c01f7fca05d",
+		"f55324f4-2694-077c-e49c-335d290b65b9",
+		"1d5916f3-77ae-5e52-f145-a8306eb06a61",
+		"21f7802c-257c-4c5d-f7e6-9dbad0208941",
+		"a7bca1b3-3a0b-e24f-aeb5-454055ee48e2",
+		"5964eeda-b1c3-4b39-0c0f-42bade48b138",
+		"0bbc0eed-7e59-9adc-01b4-9a04d94ea133",
+		"2a362c1f-ae4f-d36f-926c-7eb45bd4d1b3",
+		"87145fe7-ebaf-5e92-6222-ed3a0942d54d",
+		"78a8dfd6-79e3-139a-54e5-304f61d6a15d",
+		"0560fe98-091d-48fc-e7c5-0a81853ddc67",
+		"941eaed4-0de6-1b67-4752-02abab1f7deb",
+		"66b10564-cbd5-ec25-f3b6-80ce0b555baf",
+		"a1d55b17-ea9f-5c85-59fc-72f5d731a884",
+		"3181f790-3794-b6eb-c7e0-0d43f811c098",
+		"22a504b8-fe0d-2cf8-e2e0-06070cdc6ede",
+		"e8779d57-d121-f2fe-0c07-2ba8c457781a",
+		"2922de59-86c6-4978-48c3-21b93e6518e5",
+		"c1057f9d-9501-276b-1faf-034fa79631d4",
+		"031156ff-a789-b5eb-fa6c-2dc5d15ac4e1",
+		"0ce0af43-9334-ad47-0907-b3cc3a8de358",
+		"6f8e877b-f85f-017f-0e71-f23a09acbc84",
+		"eb33655a-3528-6b34-6a88-9b1dda0fdf7c",
+		"50e77059-d94f-c8d9-50c5-e78e8e948d8b",
+		"616a635d-317d-fa29-c4f4-e6ee03082df6",
+		"a77158c7-d35d-43b3-219c-c1116d07226e",
+		"14963445-a646-10a3-5cd0-5d2cefccf9e2",
+		"737849a2-dd4c-df44-b169-fd90c303666f",
+		"620d1b9e-fce5-f845-c1e9-7436ec3c479c",
+		"e416354a-8c74-1431-1482-6f6922269a9a",
+		"ecc15034-023e-912d-2928-8ef0bab14518",
+		"e09649e2-24b7-0db2-c2fa-fd06f5b6f275",
+		"c7a09bb2-0ded-79a8-b7c7-0eaaa47b5ba2",
+		"44648963-3e40-3d11-77d3-ee6b4a642c29",
+		"d5cb9283-be64-e3d0-a23b-29e76f1f1375",
+		"1032c80e-38f8-eeac-8ddc-b519db542880",
+		"42d8485e-926b-33db-b37c-2883241b61ed",
+		"a3291aa2-853c-9954-3da6-4ac6c472615d",
+		"291a340d-3d2a-ebb4-c864-5a8a54903756",
+		"665f35e1-d64d-61dc-2a11-03aebfa886b9",
+		"58b3624c-a1c4-8a94-03ea-4c63883a9c32",
+		"11a568b8-e65b-7d93-81d8-f97146fb3af3"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1619064573351,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "031156ff-a789-b5eb-fa6c-2dc5d15ac4e1",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "0560fe98-091d-48fc-e7c5-0a81853ddc67",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTgxMTAsImV4cCI6MTYxOTAyMTcxMH0.Yt8WN6dbQvcC_GoOZ-HQkqdnaiYf8KAMsNOetaInyJrd8kIXTcRyL1DzE0s63r2YvoWSZ78Fo9rettug_gJBkvpPWQqCNNLRJyONA5Mqlh8w-5m3rbvQdPJKKzjfGQcFvJY1ztKOTPzfv1H2rxkzIgR3lKpkuYEcWn6jVrco2XwUQnlfEVZ4wTKjJsrjSWTR6CPcnsWeigwu-82uo_CmKFPnTjwVr50yJcmcx0I0YsBuf6E9G9slSVsSEFmyxcgSyf9abR_Z0UCpf7gCw7_NgCClv00Vk_za3D_RGMHIIBHgwi0eHZMWOF--r0pKPdAo26tMOteURoG-eockdUz0HQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTgxMTAsImV4cCI6MTYxOTAyMTcxMH0.Yt8WN6dbQvcC_GoOZ-HQkqdnaiYf8KAMsNOetaInyJrd8kIXTcRyL1DzE0s63r2YvoWSZ78Fo9rettug_gJBkvpPWQqCNNLRJyONA5Mqlh8w-5m3rbvQdPJKKzjfGQcFvJY1ztKOTPzfv1H2rxkzIgR3lKpkuYEcWn6jVrco2XwUQnlfEVZ4wTKjJsrjSWTR6CPcnsWeigwu-82uo_CmKFPnTjwVr50yJcmcx0I0YsBuf6E9G9slSVsSEFmyxcgSyf9abR_Z0UCpf7gCw7_NgCClv00Vk_za3D_RGMHIIBHgwi0eHZMWOF--r0pKPdAo26tMOteURoG-eockdUz0HQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "0bbc0eed-7e59-9adc-01b4-9a04d94ea133",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTkwNDUsImV4cCI6MTYxOTAyMjY0NX0.dLZy7ZMcVNkPu9fXFxrrHFnoi-8gCFesHS3Su7qaL9a6ujZ1fsfXJVhFuvobIU7MSPhG2SxUaTBWeqrAhc4MhNSnjIob3KzmpPQelKSEBF9mQAgtAlhJS8LPSsd2oo0H757-5bFkHqZXiiOk5YFNj4Kd-uhHieVQmicD8e4JDPGl2jm_ngm2BIh_N4XOgqv_FAW-ge8s-NQ0POlO-VKiQcCXhSnw8PXNJCjtXBM5RJoC2Afr6saZZ6s82Qv_ylToIJ_CGtSew50Rgg0zvb4RKrHwxUDga1130kBnF4y606Kb0DW1vxR27HgAfxdbH1Ung9eyxlMXRQJB07cev-NMgQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTkwNDUsImV4cCI6MTYxOTAyMjY0NX0.dLZy7ZMcVNkPu9fXFxrrHFnoi-8gCFesHS3Su7qaL9a6ujZ1fsfXJVhFuvobIU7MSPhG2SxUaTBWeqrAhc4MhNSnjIob3KzmpPQelKSEBF9mQAgtAlhJS8LPSsd2oo0H757-5bFkHqZXiiOk5YFNj4Kd-uhHieVQmicD8e4JDPGl2jm_ngm2BIh_N4XOgqv_FAW-ge8s-NQ0POlO-VKiQcCXhSnw8PXNJCjtXBM5RJoC2Afr6saZZ6s82Qv_ylToIJ_CGtSew50Rgg0zvb4RKrHwxUDga1130kBnF4y606Kb0DW1vxR27HgAfxdbH1Ung9eyxlMXRQJB07cev-NMgQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "0ce0af43-9334-ad47-0907-b3cc3a8de358",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDc0MTYsImV4cCI6MTYxOTAxMTAxNn0.kaUH4c_mt8aVJ7lxugxJ8Y9bqi7qjjB3fj1FbEAaTMEp8s_98U4gwpSBdmywm69xtNLEurdt1qHDxl06YvDFRlQkQ61y0v_yQlvTUfj_FO6jgwwhhgs9doWtrREzuEpF0-5_duDHhej2zNkoxMx3hApSCuW43MDDfQvE88ixLutW-xUUv5iuLayM6RO_Eq1UYVCXyLS2FxK77Wbdp6I3qH6cunIE0He3EwIpzDCqO8mDmqBtgM3zNLBHBNJCWaYYz0YZ1PsT1cZYJC3vZ89pN2bDcjUV9vExeW4KHCXEqyXjcP-nfVf07_C8mb4X4aaRRQzfZkUUGWJgLcnYvJaHBw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDc0MTYsImV4cCI6MTYxOTAxMTAxNn0.kaUH4c_mt8aVJ7lxugxJ8Y9bqi7qjjB3fj1FbEAaTMEp8s_98U4gwpSBdmywm69xtNLEurdt1qHDxl06YvDFRlQkQ61y0v_yQlvTUfj_FO6jgwwhhgs9doWtrREzuEpF0-5_duDHhej2zNkoxMx3hApSCuW43MDDfQvE88ixLutW-xUUv5iuLayM6RO_Eq1UYVCXyLS2FxK77Wbdp6I3qH6cunIE0He3EwIpzDCqO8mDmqBtgM3zNLBHBNJCWaYYz0YZ1PsT1cZYJC3vZ89pN2bDcjUV9vExeW4KHCXEqyXjcP-nfVf07_C8mb4X4aaRRQzfZkUUGWJgLcnYvJaHBw",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "0ecc7f6f-b01c-105e-43a9-692981354a4c",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "1032c80e-38f8-eeac-8ddc-b519db542880",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "11a568b8-e65b-7d93-81d8-f97146fb3af3",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "14963445-a646-10a3-5cd0-5d2cefccf9e2",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDQ5MTcsImV4cCI6MTYxOTAwODUxN30.DidjWXTmPfMpsBEvVmCS22QT5ci1AF40V3yiAGxXNl5jQAVzSGjmKLkSOwPu_2Pdywp3Cszx4zJUMNSxvIM1Uqf-M5hzVMJjG-w1xApYaQQw8wS-01uvq49t52y8nWnEh3-7sIoyATPP73Bw_Z_2Pf0CbDyMYPW2wRJ7Fc3Bq9Xi0LJ-YddlRgEuGurtC1QZcwEI2s-xjPAHS1ZiIPpy7VI3nEMH9doVpd2iTrI8t_ObTiGVF_0uoMuMZlTfoK7jqCCWEE3RFzayoT_Bav73K__gUJ9iq9gvFmSLYKOU8CWXDm4Cb5rQ7peyHbuZP3-DHg0UWJEw_Lzth2ljzdjF7w\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDQ5MTcsImV4cCI6MTYxOTAwODUxN30.DidjWXTmPfMpsBEvVmCS22QT5ci1AF40V3yiAGxXNl5jQAVzSGjmKLkSOwPu_2Pdywp3Cszx4zJUMNSxvIM1Uqf-M5hzVMJjG-w1xApYaQQw8wS-01uvq49t52y8nWnEh3-7sIoyATPP73Bw_Z_2Pf0CbDyMYPW2wRJ7Fc3Bq9Xi0LJ-YddlRgEuGurtC1QZcwEI2s-xjPAHS1ZiIPpy7VI3nEMH9doVpd2iTrI8t_ObTiGVF_0uoMuMZlTfoK7jqCCWEE3RFzayoT_Bav73K__gUJ9iq9gvFmSLYKOU8CWXDm4Cb5rQ7peyHbuZP3-DHg0UWJEw_Lzth2ljzdjF7w",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "1d5916f3-77ae-5e52-f145-a8306eb06a61",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer \"eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjExOTAsImV4cCI6MTYxOTAyNDc5MH0.RGMH48O5351oZKNd4bznhGZrN8gAKcHmcRrnwck-2PnZXlgbHEwMpCoAjPptanYtfejIU6cZKAdgOai5qLllA8MO_lZg88iEulRiFujyduMyFWnZGOHmBUNNh130vdnJRPjO0QZ81tDeYQroInzh72bJ9NHM2rc05LJl4jGj2TTpQaajN4uTmPdKle6FBapO6tBBkQpyeWtOaCixAu833qwAxbxOvTCDCyb7es-lyggvVJm4JY-7mdDLoz5F41mNY7IIjQd4BEREYAN3LFkfIITdl2ZtwsyDIYDNIf0g4drjGpxETw7pwYaJmuhCXdJb3Sa3ZOd3wzWPJvf-tX1-JQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer \"eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjExOTAsImV4cCI6MTYxOTAyNDc5MH0.RGMH48O5351oZKNd4bznhGZrN8gAKcHmcRrnwck-2PnZXlgbHEwMpCoAjPptanYtfejIU6cZKAdgOai5qLllA8MO_lZg88iEulRiFujyduMyFWnZGOHmBUNNh130vdnJRPjO0QZ81tDeYQroInzh72bJ9NHM2rc05LJl4jGj2TTpQaajN4uTmPdKle6FBapO6tBBkQpyeWtOaCixAu833qwAxbxOvTCDCyb7es-lyggvVJm4JY-7mdDLoz5F41mNY7IIjQd4BEREYAN3LFkfIITdl2ZtwsyDIYDNIf0g4drjGpxETw7pwYaJmuhCXdJb3Sa3ZOd3wzWPJvf-tX1-JQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "21f7802c-257c-4c5d-f7e6-9dbad0208941",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "22a504b8-fe0d-2cf8-e2e0-06070cdc6ede",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "291a340d-3d2a-ebb4-c864-5a8a54903756",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDE2OTYsImV4cCI6MTYxOTAwNTI5Nn0.IhB1AIscKaXYfF49f8qgqE6eX0HFR-XIoZqL0SuX2FqALm7-TpEtppN86HKQPJBYSJh_KVd64zBee_4KHkIIvw96Xq0m1BP0RhaSneGlAWWywBPH2jCjuKt0pxfNhi5jDErDaa-0zdCxiiLt33uH1mmKlYVfZR-H1j9k7AOdcxFaRs6hwheNo20v84WIJ4T-DMP8LWo4FgCOkHbI1_loIe1TswloCLhU8nqfstx2p3OKKFmpma3z_BeNn7lXh6bVepCkPThAXxV7vimUl6nOTFSo5Jz85mkdlfNV4ksi9f-LAh29Wf7gigE9CMlwWHo5b4ALADKGBpAR2jYsH16y2Q\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDE2OTYsImV4cCI6MTYxOTAwNTI5Nn0.IhB1AIscKaXYfF49f8qgqE6eX0HFR-XIoZqL0SuX2FqALm7-TpEtppN86HKQPJBYSJh_KVd64zBee_4KHkIIvw96Xq0m1BP0RhaSneGlAWWywBPH2jCjuKt0pxfNhi5jDErDaa-0zdCxiiLt33uH1mmKlYVfZR-H1j9k7AOdcxFaRs6hwheNo20v84WIJ4T-DMP8LWo4FgCOkHbI1_loIe1TswloCLhU8nqfstx2p3OKKFmpma3z_BeNn7lXh6bVepCkPThAXxV7vimUl6nOTFSo5Jz85mkdlfNV4ksi9f-LAh29Wf7gigE9CMlwWHo5b4ALADKGBpAR2jYsH16y2Q",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "2922de59-86c6-4978-48c3-21b93e6518e5",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "2a362c1f-ae4f-d36f-926c-7eb45bd4d1b3",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "2e0b4d00-74e9-2304-8dc4-9be3937e2d54",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "3059b96c-9e53-4278-3044-77fb3a064383",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjI1MDIsImV4cCI6MTYxOTAyNjEwMn0.Qcux_4Bghs-8-CB736SEpmVzLF31cYI4n1dMsUM6D6aA0eBSsHy6DK6z-XuXywcPSGEpjTMf1QP1dQhAozCFu1VLXStf9_Ocqr1UUvisiRWOrv8_w115jbHNaMB1pPlcCPp-zx0ebLb9Xc4-_l3ac6Bcn9FzLzfLO47UwLjJZOYnAcG5JzrlgZ7Av5gikPOwOxTaWCNUdJdFTgdAJ_YRGBBhWMKnlkkfuNY9oq4i9_MQmTwzljJmj4ztKBIcNy3Sx9UnhaUHn9SrOagQnZeuJpeyzTOEdYRbMf6TVU_FOUO7BkAC59tLX2XNLcyxyXZZgJ-TqiLTiflMvo1_lm90Cg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjI1MDIsImV4cCI6MTYxOTAyNjEwMn0.Qcux_4Bghs-8-CB736SEpmVzLF31cYI4n1dMsUM6D6aA0eBSsHy6DK6z-XuXywcPSGEpjTMf1QP1dQhAozCFu1VLXStf9_Ocqr1UUvisiRWOrv8_w115jbHNaMB1pPlcCPp-zx0ebLb9Xc4-_l3ac6Bcn9FzLzfLO47UwLjJZOYnAcG5JzrlgZ7Av5gikPOwOxTaWCNUdJdFTgdAJ_YRGBBhWMKnlkkfuNY9oq4i9_MQmTwzljJmj4ztKBIcNy3Sx9UnhaUHn9SrOagQnZeuJpeyzTOEdYRbMf6TVU_FOUO7BkAC59tLX2XNLcyxyXZZgJ-TqiLTiflMvo1_lm90Cg",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "3093676e-ba2a-7a63-56e4-da804fc298ef",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjE1ODIsImV4cCI6MTYxOTAyNTE4Mn0.MEv-LA6Cz-7R9YjQq9jknv7_aKsdHNFXhb5Dpt-N_Mz0Ipsm4g6W9WVzGkiMjHKHR3B4APm6gF8UWzubAgAQ2VGQArYnfwNasFgS0HQd2kY7DselfzfMonkvtdho1YXwevJqwnMlwDFBD_k8MxmjSbLYs33-y9fh4AEfdi4LX1gGfSSlj1ZQgeXNS0gvGaxD1xZJOFFcGw2H6V8fNhc_fQC12OyQP8FyYJ88Aw-tPUGc6vwYHM9TnwjFHEzXmn5unDC8nt7jCbVh58WdsHzg5eDc05u_MqmGHPC-Rc_hayTTtEBR_Xy4pfhp3l4dpCPhgoQnR56SYL1cYw1ncuyjLg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjE1ODIsImV4cCI6MTYxOTAyNTE4Mn0.MEv-LA6Cz-7R9YjQq9jknv7_aKsdHNFXhb5Dpt-N_Mz0Ipsm4g6W9WVzGkiMjHKHR3B4APm6gF8UWzubAgAQ2VGQArYnfwNasFgS0HQd2kY7DselfzfMonkvtdho1YXwevJqwnMlwDFBD_k8MxmjSbLYs33-y9fh4AEfdi4LX1gGfSSlj1ZQgeXNS0gvGaxD1xZJOFFcGw2H6V8fNhc_fQC12OyQP8FyYJ88Aw-tPUGc6vwYHM9TnwjFHEzXmn5unDC8nt7jCbVh58WdsHzg5eDc05u_MqmGHPC-Rc_hayTTtEBR_Xy4pfhp3l4dpCPhgoQnR56SYL1cYw1ncuyjLg",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "3181f790-3794-b6eb-c7e0-0d43f811c098",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDk2NzksImV4cCI6MTYxOTAxMzI3OX0.YhscFAyAZ7ZSB5RFszJGTze9JZiPLtVduA96cGX7Y4l3en8zWK8zfE4rODdSP0-OvKpNvYq2pZMGwf2v1WklbAUCc0kTPp2OktVxbtvgNbqX_sTdvelHlD3quWoFyeJKqNyl4xMCCJNisAV3kLpyA2Spe8hHoWyZ8CR1gfG5ImMeCUPhv818ufg_1dJhCzun3aQC9N2fDutWwISkyEWZtSNr1QZbR0_FfAYqbFUeHNrXXaY-VvDT7Gogf5aFP4U5EO8CiMBkTnKPrpBJttgblO-Wl6Hxte4wntU8EfWyKqWeikTAW_jHLy04kSfjeGPvs4i2ERv2SP1Es3oZUhbMSg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDk2NzksImV4cCI6MTYxOTAxMzI3OX0.YhscFAyAZ7ZSB5RFszJGTze9JZiPLtVduA96cGX7Y4l3en8zWK8zfE4rODdSP0-OvKpNvYq2pZMGwf2v1WklbAUCc0kTPp2OktVxbtvgNbqX_sTdvelHlD3quWoFyeJKqNyl4xMCCJNisAV3kLpyA2Spe8hHoWyZ8CR1gfG5ImMeCUPhv818ufg_1dJhCzun3aQC9N2fDutWwISkyEWZtSNr1QZbR0_FfAYqbFUeHNrXXaY-VvDT7Gogf5aFP4U5EO8CiMBkTnKPrpBJttgblO-Wl6Hxte4wntU8EfWyKqWeikTAW_jHLy04kSfjeGPvs4i2ERv2SP1Es3oZUhbMSg",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "37744af5-3465-88ad-8fc6-aaa566d58919",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "42d8485e-926b-33db-b37c-2883241b61ed",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDIxMjQsImV4cCI6MTYxOTAwNTcyNH0.JF_xj4l1GfD_61BdRkcC-622udm-bd0EEdYFPeLxyDEIWQJuM5x4ZcKZNqVnuYHmRTY3hRLrKi1z6N4IRZFiFvsvtcUKi2IGaJMu7XpctD3mbvqSejYM7J-CJKOyiWlVhqXgBj1Zeykzh1mWbcRXJpXNiZ8JSlXvSrQJLVm9tUArs0xK2mr1Q9pGAGIYdM_mruUooyotme8DE3mLkgmW7l6cgDGgkXTOz762mz2WGPSVQM_zEJXYd1mKlW5qLwVvAoqcnXjlwrh-jjMu7_3AVAyE5jvHaNutXhtGYqcjzqtimODG-FRB_mEPhNK4z3gv5YQMJNMeDdWG3frY8A0nhA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDIxMjQsImV4cCI6MTYxOTAwNTcyNH0.JF_xj4l1GfD_61BdRkcC-622udm-bd0EEdYFPeLxyDEIWQJuM5x4ZcKZNqVnuYHmRTY3hRLrKi1z6N4IRZFiFvsvtcUKi2IGaJMu7XpctD3mbvqSejYM7J-CJKOyiWlVhqXgBj1Zeykzh1mWbcRXJpXNiZ8JSlXvSrQJLVm9tUArs0xK2mr1Q9pGAGIYdM_mruUooyotme8DE3mLkgmW7l6cgDGgkXTOz762mz2WGPSVQM_zEJXYd1mKlW5qLwVvAoqcnXjlwrh-jjMu7_3AVAyE5jvHaNutXhtGYqcjzqtimODG-FRB_mEPhNK4z3gv5YQMJNMeDdWG3frY8A0nhA",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "44648963-3e40-3d11-77d3-ee6b4a642c29",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "44be482a-7ea7-6dc7-0591-7c01f7fca05d",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "50e77059-d94f-c8d9-50c5-e78e8e948d8b",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "58b3624c-a1c4-8a94-03ea-4c63883a9c32",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTg5OTQyNjgsImV4cCI6MTYxODk5Nzg2OH0.HX8QPyLIh7_HUDQMu04zBu7oZU6QVCaYmueSdMOe_TpD7tmWo_tCOo8rSiNVFd4p3w4I0136KcWBMt4eP0V8QzcxQNKO0CvNxH2rKbe5mDn-xz5f26DO9XYJdczK8HQNTtlG692RVNVLchQU10OHq9iuaS1QH4WkGq3UZAfsBQR73wSMPjZ8nEj47OOltJQxtFONNmtbVzLPMcWLCWxYcjc05bqux_xKfEDunwgTZjkEP4kxxMwpGzwzfTE22ULtOgHk2ybJC5MErwEguYCGvJ1Q1Ww7z9kZK7AXN2YJcI4mcxcztrl3dNdWaEDfZRsRvqY3lo-N9-Lx_gbkXoOQIA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTg5OTQyNjgsImV4cCI6MTYxODk5Nzg2OH0.HX8QPyLIh7_HUDQMu04zBu7oZU6QVCaYmueSdMOe_TpD7tmWo_tCOo8rSiNVFd4p3w4I0136KcWBMt4eP0V8QzcxQNKO0CvNxH2rKbe5mDn-xz5f26DO9XYJdczK8HQNTtlG692RVNVLchQU10OHq9iuaS1QH4WkGq3UZAfsBQR73wSMPjZ8nEj47OOltJQxtFONNmtbVzLPMcWLCWxYcjc05bqux_xKfEDunwgTZjkEP4kxxMwpGzwzfTE22ULtOgHk2ybJC5MErwEguYCGvJ1Q1Ww7z9kZK7AXN2YJcI4mcxcztrl3dNdWaEDfZRsRvqY3lo-N9-Lx_gbkXoOQIA",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "5964eeda-b1c3-4b39-0c0f-42bade48b138",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "5f9bce96-9b2b-9e8b-3021-e57f887f2a5f",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "616a635d-317d-fa29-c4f4-e6ee03082df6",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDUyMDksImV4cCI6MTYxOTAwODgwOX0.J7BaiyWYU0OvPRhD-AYscaC3Oih2j5nRfIrTTyFT6iG0VRJL7X2tH11V1v4gGYbF4wfwM8RxqJx8wPDc553cCWXy8Sj2jI75Xf6dnQqM6woLoofOKxcBz2C0yM1U_73aym5v09aZRaN552tIksTZLrGETJANSpDCHmaFPaZIEpDQNnT8U-0rdy50MsCXgKtj_X7o9affpVl2nGmC9zOIBdl9OjWPS4UKO_2BLTkH2s_1BbEOY3qFTzcAhxUGDrEtsh5iJqy5JCxlCHcmVlWlyLiWcXnARp63iN8JGyJu5q1hcv8ChESSWdblLK5WoKnf8Xnufi1aSOm5fl6GxAwdzw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDUyMDksImV4cCI6MTYxOTAwODgwOX0.J7BaiyWYU0OvPRhD-AYscaC3Oih2j5nRfIrTTyFT6iG0VRJL7X2tH11V1v4gGYbF4wfwM8RxqJx8wPDc553cCWXy8Sj2jI75Xf6dnQqM6woLoofOKxcBz2C0yM1U_73aym5v09aZRaN552tIksTZLrGETJANSpDCHmaFPaZIEpDQNnT8U-0rdy50MsCXgKtj_X7o9affpVl2nGmC9zOIBdl9OjWPS4UKO_2BLTkH2s_1BbEOY3qFTzcAhxUGDrEtsh5iJqy5JCxlCHcmVlWlyLiWcXnARp63iN8JGyJu5q1hcv8ChESSWdblLK5WoKnf8Xnufi1aSOm5fl6GxAwdzw",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "620d1b9e-fce5-f845-c1e9-7436ec3c479c",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDQ0NDMsImV4cCI6MTYxOTAwODA0M30.ZQPUuT_tzZBPE2FLA-nP9nRWJHi6-GIluLNlQOObtoeAf5BB_WwZUtIHKrxQiHQP5YdQz0ZsQWeqqwDkX3ayXrXvmOf-cp53lXYc6OFTCABka3F-rSW_4ruSsg3D0DVrBRWR5zUpXshJc-TqULhFPWYodrc2BWz1Q3QKYgfbFhSi1FKqyS31NUDTx5o2pVKAVhAXgK5SMnkRXzGnC1R67IWxXLDFDA_N8ruu7uDCVafKuxX30IMJxUQizEsy55j7no_11zyTj6X9loGbKtf0qcXuyrtMTv0V4h8pe7_FEDg6S4-tb2ajEjmaIbD6O7Ny5EpC1LrlkHKJWHdJA1MEEA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDQ0NDMsImV4cCI6MTYxOTAwODA0M30.ZQPUuT_tzZBPE2FLA-nP9nRWJHi6-GIluLNlQOObtoeAf5BB_WwZUtIHKrxQiHQP5YdQz0ZsQWeqqwDkX3ayXrXvmOf-cp53lXYc6OFTCABka3F-rSW_4ruSsg3D0DVrBRWR5zUpXshJc-TqULhFPWYodrc2BWz1Q3QKYgfbFhSi1FKqyS31NUDTx5o2pVKAVhAXgK5SMnkRXzGnC1R67IWxXLDFDA_N8ruu7uDCVafKuxX30IMJxUQizEsy55j7no_11zyTj6X9loGbKtf0qcXuyrtMTv0V4h8pe7_FEDg6S4-tb2ajEjmaIbD6O7Ny5EpC1LrlkHKJWHdJA1MEEA",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "62807a25-0b77-a5e8-25ba-70ca0c3af77b",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "665f35e1-d64d-61dc-2a11-03aebfa886b9",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "66b10564-cbd5-ec25-f3b6-80ce0b555baf",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTc3NTYsImV4cCI6MTYxOTAyMTM1Nn0.eIrjWCWgkFqnmDE90IhgUxgVpyoqDKtzFJ3WuTFtGfGsDMWKWBDk2bfB9mt4rwcAPgO2J53QaVhbHZKi2YaG8sKVHSBOPEwvh2cXUIsRS80EceH5TI4PuPjSF96xvOBMl7DhIiFHZsrOmhopgaoGdYPuamVxweeCRRTz1DcB03VzH6poHhPuq-D2axzeLOXUnQIT02MQbasYjF_DIM0bqt29adMpiryw_b0MEWjgf5o-v3xyRuIh5qQKQ_Qu42ikR1T3pmyzJkH4vfPRFCr-qu9QwzQ4gswAtUyOjGfBJkHZU1W7mQ25gUhbPZHQBTEEqSddhfrUEs3qmCzqJDVaFQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTc3NTYsImV4cCI6MTYxOTAyMTM1Nn0.eIrjWCWgkFqnmDE90IhgUxgVpyoqDKtzFJ3WuTFtGfGsDMWKWBDk2bfB9mt4rwcAPgO2J53QaVhbHZKi2YaG8sKVHSBOPEwvh2cXUIsRS80EceH5TI4PuPjSF96xvOBMl7DhIiFHZsrOmhopgaoGdYPuamVxweeCRRTz1DcB03VzH6poHhPuq-D2axzeLOXUnQIT02MQbasYjF_DIM0bqt29adMpiryw_b0MEWjgf5o-v3xyRuIh5qQKQ_Qu42ikR1T3pmyzJkH4vfPRFCr-qu9QwzQ4gswAtUyOjGfBJkHZU1W7mQ25gUhbPZHQBTEEqSddhfrUEs3qmCzqJDVaFQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "681cc07a-1fd3-4260-bc20-57322e8e5c1c",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjI1OTcsImV4cCI6MTYxOTAyNjE5N30.QkbeGcOCdHC7jkJMjkQBs90ejFz4RmuxezlXP2HW7f9UBfKwKastx-6HP2InjwNTOX8mz20-OS1EPbjC9ffySQdkVK2kL73lp4T-CkxQbEXiPkN79fUB80QAgulFXw7GfTdO2ruKOqfcmG5HE74n4N8c_-JJ7fU8Wc6pVEGfR6o2Kf1CxeNzjbp2741ADUgFuo6vWOaH9nxumNkp8NRL3sDaftCUIlOZB_wfqqIBpSyTnLVuGQW5Bm22totjZUzxpBoHcvGOUy3b6AiCk6-mJnh3PpXzp0d_ROfuVZ62MO6QtoK8om2kHj88YEFzIHykl67jrYl9huY4p9Pc1ZIsJg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjI1OTcsImV4cCI6MTYxOTAyNjE5N30.QkbeGcOCdHC7jkJMjkQBs90ejFz4RmuxezlXP2HW7f9UBfKwKastx-6HP2InjwNTOX8mz20-OS1EPbjC9ffySQdkVK2kL73lp4T-CkxQbEXiPkN79fUB80QAgulFXw7GfTdO2ruKOqfcmG5HE74n4N8c_-JJ7fU8Wc6pVEGfR6o2Kf1CxeNzjbp2741ADUgFuo6vWOaH9nxumNkp8NRL3sDaftCUIlOZB_wfqqIBpSyTnLVuGQW5Bm22totjZUzxpBoHcvGOUy3b6AiCk6-mJnh3PpXzp0d_ROfuVZ62MO6QtoK8om2kHj88YEFzIHykl67jrYl9huY4p9Pc1ZIsJg",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "6af00c74-68bf-7e57-4001-a604d2c3368e",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjM0NzMsImV4cCI6MTYxOTAyNzA3M30.qDDGUfWmXcp1e51Ilq5w_a_0FF033-WlJjRUNP-1Ki4Nds4MkxhUrg1W5uAvHBlId2IJcSoWEp1itMgvXThwqrAhuZrZzk_l7Lyq2wwJQrygitvkMlpFOZRkGSBx-D-wi1ktKtaiWZGxXzNHeG801hJIuH88QvboehsjemDmcRvzFtseDcFbvtezU_5BxGHvZKMNvP2NDWjqz_N2_oA2SF0LI2KHKVQ9EkLdizsNz7rnrZOJMk9OIvg3tCX5WzDzw9rdXpnc9nEjR1CgdUqEU-XnmUs262zdS1KvY9-M1O3O8cH6QkeL9v-LP_SJ5PXeP3RP7O0Qoo1jPAGX-StavQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjM0NzMsImV4cCI6MTYxOTAyNzA3M30.qDDGUfWmXcp1e51Ilq5w_a_0FF033-WlJjRUNP-1Ki4Nds4MkxhUrg1W5uAvHBlId2IJcSoWEp1itMgvXThwqrAhuZrZzk_l7Lyq2wwJQrygitvkMlpFOZRkGSBx-D-wi1ktKtaiWZGxXzNHeG801hJIuH88QvboehsjemDmcRvzFtseDcFbvtezU_5BxGHvZKMNvP2NDWjqz_N2_oA2SF0LI2KHKVQ9EkLdizsNz7rnrZOJMk9OIvg3tCX5WzDzw9rdXpnc9nEjR1CgdUqEU-XnmUs262zdS1KvY9-M1O3O8cH6QkeL9v-LP_SJ5PXeP3RP7O0Qoo1jPAGX-StavQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "6f8e877b-f85f-017f-0e71-f23a09acbc84",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "737849a2-dd4c-df44-b169-fd90c303666f",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "78a8dfd6-79e3-139a-54e5-304f61d6a15d",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "87145fe7-ebaf-5e92-6222-ed3a0942d54d",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTg4ODUsImV4cCI6MTYxOTAyMjQ4NX0.EABmQts1MLStPAfr6I8r4m-VEtUJyJPs6h36Or_Lvo8Lr9V8gSLOsfuISkYpjWmzddisWjpoJALadQyVTSICw7O_uUvh0cSBYhjpwxv3nR4CmWfPAFSLs16FbExbCNUDAne5cTmwHBQZgS2JUYxTVBN8ZDetpiU4U8pcuJVcMWFBB0Xr7BxRYyUzQBlXRoHQI6CfHczAqA-m-wKnhtdo-BsTvm95Gd8w9dK8iH5AJLaMK3t2Ft_Bam9D95I2xxVfPxBkF1w2_OfwpOMvTFxfPCC26ev2VetTM2B7VxWnaPsFRSByCMz8N2yeKCocBhbv0N8nZdIdv2Ja9srDwK_nYQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMTg4ODUsImV4cCI6MTYxOTAyMjQ4NX0.EABmQts1MLStPAfr6I8r4m-VEtUJyJPs6h36Or_Lvo8Lr9V8gSLOsfuISkYpjWmzddisWjpoJALadQyVTSICw7O_uUvh0cSBYhjpwxv3nR4CmWfPAFSLs16FbExbCNUDAne5cTmwHBQZgS2JUYxTVBN8ZDetpiU4U8pcuJVcMWFBB0Xr7BxRYyUzQBlXRoHQI6CfHczAqA-m-wKnhtdo-BsTvm95Gd8w9dK8iH5AJLaMK3t2Ft_Bam9D95I2xxVfPxBkF1w2_OfwpOMvTFxfPCC26ev2VetTM2B7VxWnaPsFRSByCMz8N2yeKCocBhbv0N8nZdIdv2Ja9srDwK_nYQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "89b3be9b-0c23-75c8-8adb-84627fb588fd",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjQxMjQsImV4cCI6MTYxOTAyNzcyNH0.TMiDlAIvwexr4gOfQVgmzyIx5avjc1074wVLMsoMo6VQtv2ebHXyga-CtcjpYYjPgY-wYLUtCGmBLGMsRjYgbZG26fqMlHNn2_OqbIM5Pb6sMdPA_-UBz_0t_8Q4ExrNdJ1-qRfs3oKm7LC7wBwjhWQY0ptvaqsfYC5W5mPJrcODP-2Xtt7B462-b8ZgejLa3xLnMVZEleLgCgHrqFVT7Rk9NwSaa9cPDUAqNuH7KESQfY2eoyVL2ba_vNfylsdkiDd0WK7gF7Bi0RY1p7CgAk9nr0pup3p9CWqYudeVVsNQhEzr3u9ydKNnzQILXrz4uXmKuTZdzcE4c6SRzODXjQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjQxMjQsImV4cCI6MTYxOTAyNzcyNH0.TMiDlAIvwexr4gOfQVgmzyIx5avjc1074wVLMsoMo6VQtv2ebHXyga-CtcjpYYjPgY-wYLUtCGmBLGMsRjYgbZG26fqMlHNn2_OqbIM5Pb6sMdPA_-UBz_0t_8Q4ExrNdJ1-qRfs3oKm7LC7wBwjhWQY0ptvaqsfYC5W5mPJrcODP-2Xtt7B462-b8ZgejLa3xLnMVZEleLgCgHrqFVT7Rk9NwSaa9cPDUAqNuH7KESQfY2eoyVL2ba_vNfylsdkiDd0WK7gF7Bi0RY1p7CgAk9nr0pup3p9CWqYudeVVsNQhEzr3u9ydKNnzQILXrz4uXmKuTZdzcE4c6SRzODXjQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "8c4673a5-f819-b1b1-c546-2a9fa8cdec39",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjMyMzgsImV4cCI6MTYxOTAyNjgzOH0.XGOTZ8mzcW6y0uYqcd4gqpGKeMXHbD8YrATP0ZDoanSrZhkLhE5r_rCUinUv8mI1dTLBCBmioEPY67UmhnVbb2E9km0lOP-I_SVwklSvHrcDFLFcS_PFw1Xja-CwpoDU-akRta3tPHX34Z5woQDE1stEDspTa7IWv2SH0RoeH8PtNK76k_sc70ZCszq220mvSAt-pvQUrxZkI_qoDkt93bNCfP6TqIBa5DRrgfSEuFtTO7eKDv-4h1lgUD-sFXk8B1vRBjBOzz0g2_8HylmKYhjIx7UHPFE0jUh8wbWXqIUoHJJZWeufeXTkjyb9pK98L0tqJSrUphQRbRd23_CYzw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjMyMzgsImV4cCI6MTYxOTAyNjgzOH0.XGOTZ8mzcW6y0uYqcd4gqpGKeMXHbD8YrATP0ZDoanSrZhkLhE5r_rCUinUv8mI1dTLBCBmioEPY67UmhnVbb2E9km0lOP-I_SVwklSvHrcDFLFcS_PFw1Xja-CwpoDU-akRta3tPHX34Z5woQDE1stEDspTa7IWv2SH0RoeH8PtNK76k_sc70ZCszq220mvSAt-pvQUrxZkI_qoDkt93bNCfP6TqIBa5DRrgfSEuFtTO7eKDv-4h1lgUD-sFXk8B1vRBjBOzz0g2_8HylmKYhjIx7UHPFE0jUh8wbWXqIUoHJJZWeufeXTkjyb9pK98L0tqJSrUphQRbRd23_CYzw",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "8fc48ad9-aaf1-337c-464a-19b5d73b8051",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "9057ae75-c645-56d4-9acb-7e79edcf7996",
+			"url": "localhost:7008/api/auth/signup",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/signup",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\",\n\t\"dob\": \"14/03/1987\"\n}"
+		},
+		{
+			"id": "93cbc693-efcd-8c11-84df-4d339b87ad37",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "941eaed4-0de6-1b67-4752-02abab1f7deb",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "9d5c6513-15b3-1ad8-aaab-c62b3eb4e1e3",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "9da7cade-05a4-c07b-3d0b-fe8d1f9bf659",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjQ1MDIsImV4cCI6MTYxOTAyODEwMn0.W0KVLestBgM0M1DY5pr3LRpJdVwInoZYiQtokQyDany3v9ZFZZM0wdffMcslAzSu8oRDBmQlVO2cpfULDfNc35PHsA11bjIAWKBos39wih8tlMxiPEBmQ98uF28748NsOGMVQ_l806ddkvDOhBYJAQWKLaJ0Y0f5epcWUgW1PsNrKYt54n0aazFeboeBF4KoNb7lXS3X7db5LebHddostUJ9tdFJIpWw6pnLnATpVH2pdZQi2LHC_LomVv-MEmPG7HLxo25o8u0py9FDsIwkp4-3yVeiu16sxh6qduGrlfXpjRLOc2yKRgsjmf4l__POE-yMI86EFuoQUDltQy7mrQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjQ1MDIsImV4cCI6MTYxOTAyODEwMn0.W0KVLestBgM0M1DY5pr3LRpJdVwInoZYiQtokQyDany3v9ZFZZM0wdffMcslAzSu8oRDBmQlVO2cpfULDfNc35PHsA11bjIAWKBos39wih8tlMxiPEBmQ98uF28748NsOGMVQ_l806ddkvDOhBYJAQWKLaJ0Y0f5epcWUgW1PsNrKYt54n0aazFeboeBF4KoNb7lXS3X7db5LebHddostUJ9tdFJIpWw6pnLnATpVH2pdZQi2LHC_LomVv-MEmPG7HLxo25o8u0py9FDsIwkp4-3yVeiu16sxh6qduGrlfXpjRLOc2yKRgsjmf4l__POE-yMI86EFuoQUDltQy7mrQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "a1d55b17-ea9f-5c85-59fc-72f5d731a884",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "a3291aa2-853c-9954-3da6-4ac6c472615d",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "a77158c7-d35d-43b3-219c-c1116d07226e",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "a7bca1b3-3a0b-e24f-aeb5-454055ee48e2",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjA3NzUsImV4cCI6MTYxOTAyNDM3NX0.cJYpEANuPrBvjW4qIh5HzaHAlQhLWS4DxgV_d2PxhRL-J2a1OJfega33WlKSuzGPD1eq2ezdEnRmgCD_hYNmojty7axWAWb7M_OItKMOV7kTHSQ3bGsrMyjN_A_yu9zA7g-FOzN2DPHAeVDO_eSaG-q7T1eHM_DvAz6TCeLIfYHzR2jvoEU3ocqRnz99K_dvESnNAVJ3vbFxzsKFiX75b2V7sVkdsm3Lr2ngy3p18oVRLsBJnf0hXb369azHHaJVMonj25NrM_qGCaBA5_Xr4OM3yrTCeS1yjdIrAAbOgJVAaiyN5-gncdOwmWfPC3jASgWtu7MQPsmC8cl-gFXn3Q\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjA3NzUsImV4cCI6MTYxOTAyNDM3NX0.cJYpEANuPrBvjW4qIh5HzaHAlQhLWS4DxgV_d2PxhRL-J2a1OJfega33WlKSuzGPD1eq2ezdEnRmgCD_hYNmojty7axWAWb7M_OItKMOV7kTHSQ3bGsrMyjN_A_yu9zA7g-FOzN2DPHAeVDO_eSaG-q7T1eHM_DvAz6TCeLIfYHzR2jvoEU3ocqRnz99K_dvESnNAVJ3vbFxzsKFiX75b2V7sVkdsm3Lr2ngy3p18oVRLsBJnf0hXb369azHHaJVMonj25NrM_qGCaBA5_Xr4OM3yrTCeS1yjdIrAAbOgJVAaiyN5-gncdOwmWfPC3jASgWtu7MQPsmC8cl-gFXn3Q",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "afce2be7-dcee-4634-ad27-addb68b6425d",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjMxMTAsImV4cCI6MTYxOTAyNjcxMH0.U7tekh6xbVpvt7b2IkEbPoQQnAG0DMnlVFM57mR6HJCoFRBcTg4rSzuZ85E7WASGq04_EZ5U7D021ujNfKtPHP9HTL7YtXiLZaDsvWIsrMLaKoyg8Z1eWkHOpV9YvShltT4fGuiBeq8nA9qT3om1r3dvXc_BiFGVPqXaZNXKQpHLIpf_vwm2bQAIxIQmFvJfpiwbP3LhjfPvXrsaYMv53xodMLek3YLUu3PaxBPDS0mzSnVKv7YyiS18As3BHlUv5o8kaz887bfqZbrTQ1x_5CrwmhrWlVDylaQzMfi710acrt299lGDANEsximn8u6S6gMKf3GsizICF3cYR7nu0g\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjMxMTAsImV4cCI6MTYxOTAyNjcxMH0.U7tekh6xbVpvt7b2IkEbPoQQnAG0DMnlVFM57mR6HJCoFRBcTg4rSzuZ85E7WASGq04_EZ5U7D021ujNfKtPHP9HTL7YtXiLZaDsvWIsrMLaKoyg8Z1eWkHOpV9YvShltT4fGuiBeq8nA9qT3om1r3dvXc_BiFGVPqXaZNXKQpHLIpf_vwm2bQAIxIQmFvJfpiwbP3LhjfPvXrsaYMv53xodMLek3YLUu3PaxBPDS0mzSnVKv7YyiS18As3BHlUv5o8kaz887bfqZbrTQ1x_5CrwmhrWlVDylaQzMfi710acrt299lGDANEsximn8u6S6gMKf3GsizICF3cYR7nu0g",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "bd7d5d36-659c-d62a-ddc8-bb95afc112fc",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "c1057f9d-9501-276b-1faf-034fa79631d4",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDgzMDUsImV4cCI6MTYxOTAxMTkwNX0.X_ekQMtJ9vzH_cMLUvyCoCry-DDMXRyKx9LceoboMcGh0swTG91T66M3qbhB21LwtG991dNwXX0x9v1V6Av8iir89lrKqp7K7cnM1CtNxEUJFikHE4RYhvOKdDy7OSBdQw86UpgPIFOVg2WCJerDCpGj4Mb-XW1FV-VPL-I0uU7mjztOokJGlK14AOUBZBnJ5Q6evvRKZxFzKvJstIkOtXgZxuwtCK3NZLiiz46eSjD3orbuIiftDVHeRlA1SkC6FXPW91tYuz88o1QRp4aUUYs_hxCc8JW2jGvK6tWGDUrYYT8JKROVRthwN_rQG3EmF6rdYMumhdV8_PKzyAMr8Q\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDgzMDUsImV4cCI6MTYxOTAxMTkwNX0.X_ekQMtJ9vzH_cMLUvyCoCry-DDMXRyKx9LceoboMcGh0swTG91T66M3qbhB21LwtG991dNwXX0x9v1V6Av8iir89lrKqp7K7cnM1CtNxEUJFikHE4RYhvOKdDy7OSBdQw86UpgPIFOVg2WCJerDCpGj4Mb-XW1FV-VPL-I0uU7mjztOokJGlK14AOUBZBnJ5Q6evvRKZxFzKvJstIkOtXgZxuwtCK3NZLiiz46eSjD3orbuIiftDVHeRlA1SkC6FXPW91tYuz88o1QRp4aUUYs_hxCc8JW2jGvK6tWGDUrYYT8JKROVRthwN_rQG3EmF6rdYMumhdV8_PKzyAMr8Q",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "c7a09bb2-0ded-79a8-b7c7-0eaaa47b5ba2",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDI2MDIsImV4cCI6MTYxOTAwNjIwMn0.ZThbCmpBIkWtgqsA6I2R--i0YtyU2KhRi2fJ8mIDOBfXJ0rqImM90FEugdDsuHh0jeihdrgrEmvkt0qI0DfjIbvoHft2Tywt0B2YwXvaVvh1zFCptrxY_ZNHUoTAGkjdkVniuSQJ3YlcM176VVX32DAbCp2BTlFVFs4g3ckMynVX1iLE09epgD-J2G737kMi292ih4YPMgLUO2u5KSG4NBga031Kkp6tofDKizOU22pkY9yy5yH8YZxPRh4DZpl8A_p_itT9l5s3bx2QwLJ9l1gkrt_1DQV8R2XEqV28zcPsyVHM9QifMn1UoOfUpwLdJt-AKeBx5UkGwPRfcjE49g\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDI2MDIsImV4cCI6MTYxOTAwNjIwMn0.ZThbCmpBIkWtgqsA6I2R--i0YtyU2KhRi2fJ8mIDOBfXJ0rqImM90FEugdDsuHh0jeihdrgrEmvkt0qI0DfjIbvoHft2Tywt0B2YwXvaVvh1zFCptrxY_ZNHUoTAGkjdkVniuSQJ3YlcM176VVX32DAbCp2BTlFVFs4g3ckMynVX1iLE09epgD-J2G737kMi292ih4YPMgLUO2u5KSG4NBga031Kkp6tofDKizOU22pkY9yy5yH8YZxPRh4DZpl8A_p_itT9l5s3bx2QwLJ9l1gkrt_1DQV8R2XEqV28zcPsyVHM9QifMn1UoOfUpwLdJt-AKeBx5UkGwPRfcjE49g",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "c94c33df-8558-fe1d-f670-daad9de28b3e",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjE3NjUsImV4cCI6MTYxOTAyNTM2NX0.A-ZtSavaeRaff2jxxtucKE6u5DLnzGjq17_YFXDl6KRfGzXfjrTMfqVmw66Wjp8eiWiSqRV0gTnTedJH9CAKBtl-tBhKBWtBX8WibhYCfsYzP2gvwbI6dbxiDITr00dZLgtBvkGjuk_VCmpzFbGkD52vaGNjqsddzysZk4M4ga1oV6yk0EwavAwEakA6Hz3qkVLDX3THl-FzzpwBGUN0AdsLq_WaDlrYsiXWk17sHLgG720nLdoFxEqGBE7mHX44afy6dkPqeqno9fAdPR1S20k9vRE1QXB1opJNYcCCFgvm8GidG-lJSsHAdIGKN9v9BIcTrCf3JP11GatfWew2_A\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjE3NjUsImV4cCI6MTYxOTAyNTM2NX0.A-ZtSavaeRaff2jxxtucKE6u5DLnzGjq17_YFXDl6KRfGzXfjrTMfqVmw66Wjp8eiWiSqRV0gTnTedJH9CAKBtl-tBhKBWtBX8WibhYCfsYzP2gvwbI6dbxiDITr00dZLgtBvkGjuk_VCmpzFbGkD52vaGNjqsddzysZk4M4ga1oV6yk0EwavAwEakA6Hz3qkVLDX3THl-FzzpwBGUN0AdsLq_WaDlrYsiXWk17sHLgG720nLdoFxEqGBE7mHX44afy6dkPqeqno9fAdPR1S20k9vRE1QXB1opJNYcCCFgvm8GidG-lJSsHAdIGKN9v9BIcTrCf3JP11GatfWew2_A",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "ca4781dd-bdc7-59d6-ab44-b4e8c8fb66c7",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjE0MTQsImV4cCI6MTYxOTAyNTAxNH0.adFV-PY5QnQeQUzeKKcX4iHTRDASx9Tt2vahnb2m-PbwoqdtOO-6GE-oJ6TAJZW-IZprJS-rsynqSB-7tOuF1iT5-3rhPgkrXCpdgyEVRlbMnIrFPYpO-y_iMT5mmPDELQ90zAb_U1_YIfx04U4B-awHWe5ET1UI5-GpgJiA1V_x3JvG9ZdN3I0nM3zywAaZY5yuth0lC1ib-yTDSqfdJ1xyZgFH2_TbavkPdoloJ8FzzLJeM8oivkrrT9o8t4KvpqlUVajODzMKbcokP1O7E-BK-dQTeR4LRe8RNywHzu-CgNWJeTHisIWOrhBXGYxwK1YsT6vipfkd6b-w_RcJvg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjE0MTQsImV4cCI6MTYxOTAyNTAxNH0.adFV-PY5QnQeQUzeKKcX4iHTRDASx9Tt2vahnb2m-PbwoqdtOO-6GE-oJ6TAJZW-IZprJS-rsynqSB-7tOuF1iT5-3rhPgkrXCpdgyEVRlbMnIrFPYpO-y_iMT5mmPDELQ90zAb_U1_YIfx04U4B-awHWe5ET1UI5-GpgJiA1V_x3JvG9ZdN3I0nM3zywAaZY5yuth0lC1ib-yTDSqfdJ1xyZgFH2_TbavkPdoloJ8FzzLJeM8oivkrrT9o8t4KvpqlUVajODzMKbcokP1O7E-BK-dQTeR4LRe8RNywHzu-CgNWJeTHisIWOrhBXGYxwK1YsT6vipfkd6b-w_RcJvg",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "ceabd8e0-e343-591b-1bb2-0d1373b2d289",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjMzNjIsImV4cCI6MTYxOTAyNjk2Mn0.Tgx-MPXIr6UtHl0JCU3fmcALmblfcYSi7Sev6wd47VO9L6OGE6mJaYtPm2fhN7qEL4oxyXyCuTj-HFDX1WKbnzMKTc5T8sOoVRXDM7MD-zN-dBp9D4vdW0ccL4bt_a08eaBQb0fMX02I1hovfO7yScsTuQDm7MOQ7FhEyfz0_rOH1uxgwK0XPkKVpCUMvefJASC4vO1FH7eh9qfoTlYCvUV8qrPVV_cJy3SgtN4o7ZHrilY3087ogdhhNPPnQQjbv1BIwzJ_aRKrcD6mzTgNZhWtvKjZ2NfXzpuw58Yz0t8amaqJwmpO4dl4pauWIP0j1XIKQVRXUSevQ747Bc7F1w\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjMzNjIsImV4cCI6MTYxOTAyNjk2Mn0.Tgx-MPXIr6UtHl0JCU3fmcALmblfcYSi7Sev6wd47VO9L6OGE6mJaYtPm2fhN7qEL4oxyXyCuTj-HFDX1WKbnzMKTc5T8sOoVRXDM7MD-zN-dBp9D4vdW0ccL4bt_a08eaBQb0fMX02I1hovfO7yScsTuQDm7MOQ7FhEyfz0_rOH1uxgwK0XPkKVpCUMvefJASC4vO1FH7eh9qfoTlYCvUV8qrPVV_cJy3SgtN4o7ZHrilY3087ogdhhNPPnQQjbv1BIwzJ_aRKrcD6mzTgNZhWtvKjZ2NfXzpuw58Yz0t8amaqJwmpO4dl4pauWIP0j1XIKQVRXUSevQ747Bc7F1w",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "d5cb9283-be64-e3d0-a23b-29e76f1f1375",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDIyMDcsImV4cCI6MTYxOTAwNTgwN30.JBmQWN2ww8AQhzTjArm3QlhSMDHb26p-SaEwEOnCWdBVGGI6kVviLzU5NJ0WOPDVmWfxvVKg7_jvsjiXuGFen055Isqc58kHVoSnIoJXuVZDNmEstynQHVtpLdd99h7qJjDt_A312yAgnENQXR_X6QEgtJWEUTIIW47NzXPs233pNL6yMOxtWWwwEI_EmBBjBCIrILTj5f0ww26wpcDR3Y-anvPFOJldqThmACU2BShG1_HbfYJbfJ_m7BMNm4V_hQyti97-eD2irru4ivchG8zN6VwFLlT-jaHGLrwvhkdYdOe0I02NRu64Dfd4nw4_XpPf3icSJos1LSBCFsSUZw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDIyMDcsImV4cCI6MTYxOTAwNTgwN30.JBmQWN2ww8AQhzTjArm3QlhSMDHb26p-SaEwEOnCWdBVGGI6kVviLzU5NJ0WOPDVmWfxvVKg7_jvsjiXuGFen055Isqc58kHVoSnIoJXuVZDNmEstynQHVtpLdd99h7qJjDt_A312yAgnENQXR_X6QEgtJWEUTIIW47NzXPs233pNL6yMOxtWWwwEI_EmBBjBCIrILTj5f0ww26wpcDR3Y-anvPFOJldqThmACU2BShG1_HbfYJbfJ_m7BMNm4V_hQyti97-eD2irru4ivchG8zN6VwFLlT-jaHGLrwvhkdYdOe0I02NRu64Dfd4nw4_XpPf3icSJos1LSBCFsSUZw",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "d7ba36e8-ef2f-fe18-b605-e8be631b463e",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "dfd4b9a2-505e-97c0-667d-47178d161baf",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjM2MDEsImV4cCI6MTYxOTAyNzIwMX0.hJooTwWHovlQHQxEWphmNg-SRt5hMRxhvNI_pJVWsZ003gJzCuhiJJZcevXHb2YF_plDgNifi3dzW1B8sqgE8m0Sb4yLUl1F0aITpggr0cpAYcspdP87aExMFMbC4Xbv1O5ySOsPbUPryHi9AHDHuNeOYo1n6c2IDmDAgXh2ZJWsXHk-I1Idds2MH7gjemSMBEA3Iylh90NYt_eCP3X4YgQrAmcq0pV9K2HD_hd63IDOUzSwE0CiqpUUBegtVNU41P-SZ4_W2sgdfAFhrpI3hhNmNn-fGmsQ_xKGbgpWNAciHwCe17DIMYq4YthMJYvkUAau_ICy5RdTNOqAXMXi5g\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjM2MDEsImV4cCI6MTYxOTAyNzIwMX0.hJooTwWHovlQHQxEWphmNg-SRt5hMRxhvNI_pJVWsZ003gJzCuhiJJZcevXHb2YF_plDgNifi3dzW1B8sqgE8m0Sb4yLUl1F0aITpggr0cpAYcspdP87aExMFMbC4Xbv1O5ySOsPbUPryHi9AHDHuNeOYo1n6c2IDmDAgXh2ZJWsXHk-I1Idds2MH7gjemSMBEA3Iylh90NYt_eCP3X4YgQrAmcq0pV9K2HD_hd63IDOUzSwE0CiqpUUBegtVNU41P-SZ4_W2sgdfAFhrpI3hhNmNn-fGmsQ_xKGbgpWNAciHwCe17DIMYq4YthMJYvkUAau_ICy5RdTNOqAXMXi5g",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "e09649e2-24b7-0db2-c2fa-fd06f5b6f275",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "e416354a-8c74-1431-1482-6f6922269a9a",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		},
+		{
+			"id": "e8779d57-d121-f2fe-0c07-2ba8c457781a",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDkxOTksImV4cCI6MTYxOTAxMjc5OX0.d92RiI8i4Z0qBNqqYeJ0oRjhmVpg-2GEM921AnPDo3kJGFE8h0hNIjh6l1eXTUTmBwJVEhXjvBPdLQFZ5Q4tC4I9X12xOT6ex2EydGvnqzIgnJToHA6uriOCMisYX2R-ym51BheqScDE3_6MpmLgHqbGScIHnUY7ZVyguA-KGsChWa1LxKATPBXG07mqy4s79sc5UraMgrz-ai3HeoPmUu2RaurjfV8N_p9Xjy_Z2akCqbMnsPLNyT8obDZWDGgUDvEYtyxEn8iPPWmumNxRy8KTrYx4jOEU-1VmQhJxzZjT_s4iLhuq4hdr6_kjEOTxzIY1eRXfOBmqzXMyzSjItg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDkxOTksImV4cCI6MTYxOTAxMjc5OX0.d92RiI8i4Z0qBNqqYeJ0oRjhmVpg-2GEM921AnPDo3kJGFE8h0hNIjh6l1eXTUTmBwJVEhXjvBPdLQFZ5Q4tC4I9X12xOT6ex2EydGvnqzIgnJToHA6uriOCMisYX2R-ym51BheqScDE3_6MpmLgHqbGScIHnUY7ZVyguA-KGsChWa1LxKATPBXG07mqy4s79sc5UraMgrz-ai3HeoPmUu2RaurjfV8N_p9Xjy_Z2akCqbMnsPLNyT8obDZWDGgUDvEYtyxEn8iPPWmumNxRy8KTrYx4jOEU-1VmQhJxzZjT_s4iLhuq4hdr6_kjEOTxzIY1eRXfOBmqzXMyzSjItg",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "eb33655a-3528-6b34-6a88-9b1dda0fdf7c",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDU5NDIsImV4cCI6MTYxOTAwOTU0Mn0.P6AMrGillX0RP4MD2CKfRk-Nv9YVpU17AwONL-HONH79XXxkfykvJTDIV-0kcabsRa-jOsLPwXxN1cX0vuvSv2ksKIplD8wWeJ4UffEwyz8uC5UDc6kiBzjaQ0cZvrJEDdsTgHW7BE2Z9iA0Z-MMpzYuU8qoSQppq267mMiOv_EjbXAroKuApgwTOfWfJSQGan-O-oTD9yvqQrGyBRq4KRSbUb3qkvb-67gXDIpB9p0XQ0VH--lR7aWGZj5GElzsjt_b-A0CHhE1PQv0FdiC4rSvEWcBMYo5D50mNNGs8vETEViy2504eJ2vaOeRwKpz5pELUglYO5t-Jw03wMW1uA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDU5NDIsImV4cCI6MTYxOTAwOTU0Mn0.P6AMrGillX0RP4MD2CKfRk-Nv9YVpU17AwONL-HONH79XXxkfykvJTDIV-0kcabsRa-jOsLPwXxN1cX0vuvSv2ksKIplD8wWeJ4UffEwyz8uC5UDc6kiBzjaQ0cZvrJEDdsTgHW7BE2Z9iA0Z-MMpzYuU8qoSQppq267mMiOv_EjbXAroKuApgwTOfWfJSQGan-O-oTD9yvqQrGyBRq4KRSbUb3qkvb-67gXDIpB9p0XQ0VH--lR7aWGZj5GElzsjt_b-A0CHhE1PQv0FdiC4rSvEWcBMYo5D50mNNGs8vETEViy2504eJ2vaOeRwKpz5pELUglYO5t-Jw03wMW1uA",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "ecc15034-023e-912d-2928-8ef0bab14518",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDI4NTksImV4cCI6MTYxOTAwNjQ1OX0.yjviMz9H43jElcvk-bcBbfr2tsrCmwXU2Gg0RBMMEEMaonyiiYdCVZzNmji7bncoplRBgwKIqwh6DwXuiI2eFtO-4tYOs7-eDbjcNZ8FBEwa70UXLjKyZS0lMeSfvUoj60Pt4roK5ZQF7ENkT_naJDcxjcamaJ5mfeMYil8Z--Gp7G97-PFP2zEC9ELi-F2R1Hn7S3O_dy4wy-doR19IYNUOhkrZrEhsUrhGGcDAWKLs5dKDGa8DQb6TwLYzruGx0zq-ejZA84ODfAEFChQLVbA910xzz21GAoGFzcOR6zJqbSf2Zk85KlX1Iepmq4UTTwWC-JIw_Np3ud2QgJY7Zg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMDI4NTksImV4cCI6MTYxOTAwNjQ1OX0.yjviMz9H43jElcvk-bcBbfr2tsrCmwXU2Gg0RBMMEEMaonyiiYdCVZzNmji7bncoplRBgwKIqwh6DwXuiI2eFtO-4tYOs7-eDbjcNZ8FBEwa70UXLjKyZS0lMeSfvUoj60Pt4roK5ZQF7ENkT_naJDcxjcamaJ5mfeMYil8Z--Gp7G97-PFP2zEC9ELi-F2R1Hn7S3O_dy4wy-doR19IYNUOhkrZrEhsUrhGGcDAWKLs5dKDGa8DQb6TwLYzruGx0zq-ejZA84ODfAEFChQLVbA910xzz21GAoGFzcOR6zJqbSf2Zk85KlX1Iepmq4UTTwWC-JIw_Np3ud2QgJY7Zg",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "f55324f4-2694-077c-e49c-335d290b65b9",
+			"url": "localhost:7008/api/weather/London",
+			"queryParams": [],
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjExOTAsImV4cCI6MTYxOTAyNDc5MH0.RGMH48O5351oZKNd4bznhGZrN8gAKcHmcRrnwck-2PnZXlgbHEwMpCoAjPptanYtfejIU6cZKAdgOai5qLllA8MO_lZg88iEulRiFujyduMyFWnZGOHmBUNNh130vdnJRPjO0QZ81tDeYQroInzh72bJ9NHM2rc05LJl4jGj2TTpQaajN4uTmPdKle6FBapO6tBBkQpyeWtOaCixAu833qwAxbxOvTCDCyb7es-lyggvVJm4JY-7mdDLoz5F41mNY7IIjQd4BEREYAN3LFkfIITdl2ZtwsyDIYDNIf0g4drjGpxETw7pwYaJmuhCXdJb3Sa3ZOd3wzWPJvf-tX1-JQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhd3N0ZWNoYnl2aXZla0BnbWFpbC5jb20iLCJpYXQiOjE2MTkwMjExOTAsImV4cCI6MTYxOTAyNDc5MH0.RGMH48O5351oZKNd4bznhGZrN8gAKcHmcRrnwck-2PnZXlgbHEwMpCoAjPptanYtfejIU6cZKAdgOai5qLllA8MO_lZg88iEulRiFujyduMyFWnZGOHmBUNNh130vdnJRPjO0QZ81tDeYQroInzh72bJ9NHM2rc05LJl4jGj2TTpQaajN4uTmPdKle6FBapO6tBBkQpyeWtOaCixAu833qwAxbxOvTCDCyb7es-lyggvVJm4JY-7mdDLoz5F41mNY7IIjQd4BEREYAN3LFkfIITdl2ZtwsyDIYDNIf0g4drjGpxETw7pwYaJmuhCXdJb3Sa3ZOd3wzWPJvf-tX1-JQ",
+					"description": "",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/weather/London",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1"
+		},
+		{
+			"id": "fe82f5cc-2fab-975b-b680-b8513052f207",
+			"url": "localhost:7008/api/auth/login",
+			"queryParams": [],
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"version": 2,
+			"name": "localhost:7008/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "dedebaa5-50f9-3f32-5c0d-c664f21c32b1",
+			"rawModeData": "{\n\t\"username\": \"awstechbyvivek@gmail.com\",\n\t\"password\": \"vivek@2244\"\n}"
+		}
+	]
+}
