@@ -23,10 +23,11 @@ public class Profile {
 
     private String dob;
 
-    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "profile", cascade = {
-            CascadeType.PERSIST,
-            CascadeType.MERGE
-    })
+
+    @ManyToMany
+    @JoinTable(name = "profile_weather",
+            joinColumns = {@JoinColumn(name = "username")},
+            inverseJoinColumns = {@JoinColumn(name = "city_name")})
     private List<WeatherData> weather = new ArrayList<>();
 
 

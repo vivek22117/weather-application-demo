@@ -23,7 +23,7 @@ public class ProfileRepositoryImpl implements ProfileRepository {
 
   @Override
   public void saveUser(Profile profile) {
-    getSession().save(profile);
+    getSession().saveOrUpdate(profile);
   }
 
   @Override

@@ -42,13 +42,7 @@ public class WeatherData {
     @Column(name = "min_temperature")
     private Double minTemperature;
 
-    @ManyToMany(cascade = {
-            CascadeType.PERSIST,
-            CascadeType.MERGE
-    })
-    @JoinTable(name = "weather_profile",
-            joinColumns = {@JoinColumn(name = "city_name")},
-            inverseJoinColumns = {@JoinColumn(name = "username")})
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "weather")
     private List<Profile> profile = new ArrayList<>();
 
     public void addProfile(Profile data) {

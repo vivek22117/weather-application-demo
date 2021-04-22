@@ -1,12 +1,10 @@
 package com.weather.api.repository;
 
-import com.weather.api.model.Profile;
 import com.weather.api.model.WeatherData;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import java.util.List;
@@ -24,10 +22,11 @@ public class WeatherDataRepositoryImpl implements WeatherDataRepository {
     @Override
     public void save(WeatherData weatherData) {
         WeatherData savedWeatherData = getSession().get(WeatherData.class, weatherData.getCityName());
-        if(ObjectUtils.isEmpty(savedWeatherData)) {
+        if (ObjectUtils.isEmpty(savedWeatherData)) {
             getSession().save(weatherData);
+
         } else {
-            getSession().update(weatherData);
+            log.debug("Do nothing!");
         }
     }
 
@@ -43,7 +42,7 @@ public class WeatherDataRepositoryImpl implements WeatherDataRepository {
 
     private Session getSession() {
         Session session = factory.getCurrentSession();
-        if(session == null) {
+        if (session == null) {
             session = factory.openSession();
         }
         return session;
