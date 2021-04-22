@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
-import java.util.Arrays;
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -33,16 +33,35 @@ public class WeatherDataServiceImpl implements WeatherDataService {
     @Override
     @Transactional
     public WeatherDataDTO getWeatherData(String cityName, Profile currentUser) {
-        WeatherData weatherByCity = null;
+        log.debug("Weather API service layer execution for city {}/{} ", cityName, currentUser.getUsername());
+        WeatherData weatherDataFromAPI = null;
         try {
-            weatherByCity = dataClient.getWeatherByCity(cityName, currentUser.getUsername());
-            weatherByCity.addProfile(currentUser);
-            currentUser.addWeatherData(weatherByCity);
-            profileRepository.saveUser(currentUser);
+            weatherDataFromAPI = dataClient.getWeatherByCity(cityName, currentUser.getUsername());
+
+            Optional<WeatherData> weatherDataFromDB = weatherDataRepository.getByCityName(cityName);
+            if (weatherDataRepository.getByCityName(cityName).isPresent()) {
+                WeatherData weatherData = weatherDataFromDB.get();
+                weatherData.setCityName(weatherDataFromAPI.getCityName());
+                weatherData.setSunset(weatherDataFromAPI.getSunset());
+                weatherData.setWeatherDescription(weatherDataFromAPI.getWeatherDescription());
+                weatherData.setMinTemperature(weatherDataFromAPI.getMinTemperature());
+                weatherData.setMaxTemperature(weatherDataFromAPI.getMaxTemperature());
+                weatherData.setSunrise(weatherDataFromAPI.getSunrise());
+                weatherData.setCurrentTemperature(weatherDataFromAPI.getCurrentTemperature());
+
+                weatherData.addProfile(currentUser);
+                currentUser.addWeatherData(weatherData);
+                weatherDataRepository.save(weatherData);
+                return mapDTO(weatherData);
+            } else {
+                currentUser.addWeatherData(weatherDataFromAPI);
+                weatherDataRepository.save(weatherDataFromAPI);
+            }
+
         } catch (Exception ex) {
             log.error("Error cause while saving weather data: " + ex.getMessage());
         }
-        return mapDTO(weatherByCity);
+        return mapDTO(weatherDataFromAPI);
     }
 
     private WeatherDataDTO mapDTO(WeatherData weatherByCity) {

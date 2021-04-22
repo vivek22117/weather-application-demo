@@ -5,9 +5,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
-import org.springframework.util.ObjectUtils;
 
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Repository
@@ -21,13 +21,12 @@ public class WeatherDataRepositoryImpl implements WeatherDataRepository {
 
     @Override
     public void save(WeatherData weatherData) {
-        WeatherData savedWeatherData = getSession().get(WeatherData.class, weatherData.getCityName());
-        if (ObjectUtils.isEmpty(savedWeatherData)) {
-            getSession().save(weatherData);
+        getSession().saveOrUpdate(weatherData);
+    }
 
-        } else {
-            log.debug("Do nothing!");
-        }
+    @Override
+    public Optional<WeatherData> getByCityName(String cityName) {
+        return Optional.ofNullable(getSession().get(WeatherData.class, cityName));
     }
 
     @Override
