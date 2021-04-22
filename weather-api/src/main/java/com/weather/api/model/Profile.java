@@ -1,6 +1,7 @@
 package com.weather.api.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -8,7 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
+@Getter
+@Setter
 public class Profile {
 
     @Id
@@ -21,6 +23,29 @@ public class Profile {
 
     private String dob;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "profile", cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    })
     private List<WeatherData> weather = new ArrayList<>();
+
+
+    public void addWeatherData(WeatherData data) {
+        this.weather.add(data);
+        data.getProfile().add(this);
+    }
+
+    public void removeWeatherData(WeatherData data) {
+        this.weather.remove(data);
+        data.getProfile().remove(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Profile{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", dob='" + dob + '\'' +
+                '}';
+    }
 }
