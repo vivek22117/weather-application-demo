@@ -1,5 +1,6 @@
 package com.weather.api.service;
 
+import com.weather.api.exception.UserAuthenticationException;
 import com.weather.api.model.AuthenticationResponse;
 import com.weather.api.model.LoginRequest;
 import com.weather.api.model.RegisterRequest;
@@ -17,7 +18,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.security.InvalidParameterException;
 import java.time.Instant;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import static com.weather.api.util.AppUtility.JWT_TOKEN_VALIDITY;
 
@@ -52,13 +56,23 @@ public class AuthServiceImpl implements AuthService {
     @Transactional
     @Override
     public Profile signup(RegisterRequest request) {
-        Profile profile = new Profile();
+        Profile profile = null;
+        try {
+            profile = new Profile();
 
-        profile.setUsername(request.getUsername());
-        profile.setDob(request.getDob());
-        profile.setPassword(passwordEncoder.encode(request.getPassword()));
+            profile.setUsername(request.getUsername());
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            LocalDate date = LocalDate.parse(request.getDob(), formatter);
+            System.out.println(date);
+            profile.setDob(date);
+            profile.setPassword(passwordEncoder.encode(request.getPassword()));
 
-        profileRepository.saveUser(profile);
+            profileRepository.saveUser(profile);
+        } catch (Exception ex) {
+            log.error("Failed to save new profile with Id: " + request.getUsername());
+            throw new InvalidParameterException("Please provide valid values for registration");
+        }
+
         return profile;
     }
 
@@ -79,10 +93,8 @@ public class AuthServiceImpl implements AuthService {
                     .build();
         } catch (Exception ex) {
             log.error("Error while login api call" + ex.getMessage());
+            throw new UserAuthenticationException("User validation failed, please provide valid credentials!");
         }
-
-        return null;
-
     }
 
     @Override
