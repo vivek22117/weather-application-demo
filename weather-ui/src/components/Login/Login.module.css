@@ -1,0 +1,10 @@
+.container {
+    padding: 20px;
+    height: 73vh;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.avatarcontainer {
+    background-color: dodgerblue !important;
+}
