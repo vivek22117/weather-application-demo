@@ -1,10 +1,13 @@
 package com.weather.api.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.Past;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,13 +18,15 @@ public class Profile {
 
     @Id
     @Column(unique = true, nullable = false)
-    @Email
+    @Email(message = "Please provide valid emailId")
     private String username;
 
     @Column(nullable = false)
     private String password;
 
-    private String dob;
+    @Past
+    @JsonFormat(pattern = "dd-MM-yyyy")
+    private LocalDate dob;
 
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "profile")
     private Set<WeatherData> weather = new HashSet<>();
@@ -42,7 +47,7 @@ public class Profile {
         return "Profile{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", dob='" + dob + '\'' +
+                ", dob=" + dob +
                 '}';
     }
 }
