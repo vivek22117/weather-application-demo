@@ -17,7 +17,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.ObjectUtils;
+import org.springframework.util.StringUtils;
 
+import javax.validation.ConstraintViolationException;
 import java.security.InvalidParameterException;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -70,7 +73,7 @@ public class AuthServiceImpl implements AuthService {
             profileRepository.saveUser(profile);
         } catch (Exception ex) {
             log.error("Failed to save new profile with Id: " + request.getUsername());
-            throw new InvalidParameterException("Please provide valid values for registration");
+            throw new InvalidParameterException(ex.getMessage());
         }
 
         return profile;
@@ -90,10 +93,11 @@ public class AuthServiceImpl implements AuthService {
                     .authenticationToken(token)
                     .username(loginRequest.getUsername())
                     .expiresAt(Instant.now().plusMillis(JWT_TOKEN_VALIDITY * 1000))
+                    .isAuthenticated(true)
                     .build();
         } catch (Exception ex) {
             log.error("Error while login api call" + ex.getMessage());
-            throw new UserAuthenticationException("User validation failed, please provide valid credentials!");
+            throw new UserAuthenticationException("User validation failed, provide valid credentials!");
         }
     }
 
