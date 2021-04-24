@@ -1,17 +1,22 @@
 package com.weather.api.service;
 
+import com.weather.api.exception.BusinessException;
+import com.weather.api.exception.WeatherDataNoFoundException;
 import com.weather.api.model.Profile;
 import com.weather.api.model.WeatherData;
 import com.weather.api.model.WeatherDataDTO;
+import com.weather.api.model.WeatherResponse;
 import com.weather.api.repository.ProfileRepository;
 import com.weather.api.repository.WeatherDataClient;
 import com.weather.api.repository.WeatherDataRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -32,9 +37,12 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 
     @Override
     @Transactional
-    public WeatherDataDTO getWeatherData(String cityName, Profile currentUser) {
+    public WeatherResponse getWeatherData(String cityName, Profile currentUser) {
         log.debug("Weather API service layer execution for city {}/{} ", cityName, currentUser.getUsername());
+
         WeatherData weatherDataFromAPI = null;
+        Set<WeatherData> weatherSearchHistory = new HashSet<>();
+
         try {
             weatherDataFromAPI = dataClient.getWeatherByCity(cityName, currentUser.getUsername());
 
@@ -51,17 +59,32 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 
                 weatherData.addProfile(currentUser);
                 currentUser.addWeatherData(weatherData);
+                weatherSearchHistory.addAll(currentUser.getWeather());
                 weatherDataRepository.save(weatherData);
-                return mapDTO(weatherData);
+                return setWeatherResponse(weatherData, weatherSearchHistory);
             } else {
                 currentUser.addWeatherData(weatherDataFromAPI);
+                weatherSearchHistory.addAll(currentUser.getWeather());
                 weatherDataRepository.save(weatherDataFromAPI);
             }
 
+        } catch (WeatherDataNoFoundException ex) {
+            log.error("Error cause while saving or fetching weather data for city: " + cityName);
+            throw new WeatherDataNoFoundException(ex.getMessage());
         } catch (Exception ex) {
-            log.error("Error cause while saving weather data: " + ex.getMessage());
+            log.error("Failed to save weather data in DB");
+            throw new BusinessException(ex.getMessage());
         }
-        return mapDTO(weatherDataFromAPI);
+        return setWeatherResponse(weatherDataFromAPI, weatherSearchHistory);
+    }
+
+    private WeatherResponse setWeatherResponse(WeatherData weatherData, Set<WeatherData> weatherSearchHistory) {
+        return WeatherResponse.builder().weatherDataDTO(mapDTO(weatherData))
+                .weatherDataDTOList(weatherSearchHistory
+                        .stream()
+                        .map(this::mapDTO)
+                        .collect(Collectors.toList()))
+                .build();
     }
 
     private WeatherDataDTO mapDTO(WeatherData weatherByCity) {
