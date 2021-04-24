@@ -11,12 +11,20 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import javax.validation.ConstraintViolationException;
 import java.security.InvalidParameterException;
-import java.util.NoSuchElementException;
 
 @ControllerAdvice
 @Slf4j
 public class ApplicationControllerAdvice extends ResponseEntityExceptionHandler {
+
+    @ExceptionHandler({ConstraintViolationException.class})
+    public ResponseEntity<Object> handleConstraintViolation(ConstraintViolationException ex) {
+        return new ResponseEntity<>(ex.getConstraintViolations()
+                .stream().findFirst()
+                .get()
+                .getMessage(), HttpStatus.BAD_REQUEST);
+    }
 
     @ExceptionHandler(InvalidParameterException.class)
     public ResponseEntity<String> invalidRegistrationInput(InvalidParameterException invalidParameterException) {
@@ -50,7 +58,7 @@ public class ApplicationControllerAdvice extends ResponseEntityExceptionHandler 
 
     @ExceptionHandler(RuntimeException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ResponseEntity<String> handleAllUncaughtException(RuntimeException exception, WebRequest request) {
+    public ResponseEntity<String> handleAllUncaughtException(RuntimeException exception) {
         log.error("Unknown error occurred", exception);
         return new ResponseEntity<>("Unknown error occurred, please raise a support ticket!", HttpStatus.INTERNAL_SERVER_ERROR);
     }
