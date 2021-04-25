@@ -1,5 +1,6 @@
 package com.weather.api.security;
 
+import com.weather.api.exception.UserAuthenticationException;
 import com.weather.api.service.ProfileDetailsServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +47,7 @@ public class AppAuthenticationFilter extends OncePerRequestFilter {
 
             SecurityContextHolder.getContext().setAuthentication(authenticationToken);
         }
+
         filterChain.doFilter(request, response);
     }
 
