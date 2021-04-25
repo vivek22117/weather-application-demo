@@ -1,11 +1,12 @@
 package com.weather.api.config;
 
 import com.weather.api.security.AppAuthenticationFilter;
+import com.weather.api.security.JwtAccessDeniedHandler;
+import com.weather.api.security.JwtAuthenticationEntryPoint;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -24,11 +25,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final UserDetailsService userDetailsService;
     private final AppAuthenticationFilter authenticationFilter;
+    private final JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
+    private final JwtAccessDeniedHandler jwtAccessDeniedHandler;
 
     public SecurityConfig(@Qualifier("profileDetailsServiceImpl") UserDetailsService userDetailsService,
-                          AppAuthenticationFilter authenticationFilter) {
+                          AppAuthenticationFilter authenticationFilter,
+                          JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint,
+                          JwtAccessDeniedHandler jwtAccessDeniedHandler) {
         this.userDetailsService = userDetailsService;
         this.authenticationFilter = authenticationFilter;
+        this.jwtAuthenticationEntryPoint = jwtAuthenticationEntryPoint;
+        this.jwtAccessDeniedHandler = jwtAccessDeniedHandler;
     }
 
     @Bean
@@ -43,7 +50,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/api/auth/**")
                 .permitAll()
-                .antMatchers(HttpMethod.GET, "/api/**")
+                .antMatchers("/api/**")
                 .permitAll()
                 .antMatchers("/internal",
                         "/h2/**",
@@ -56,7 +63,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/webjars/**")
                 .permitAll()
                 .anyRequest()
-                .authenticated();
+                .authenticated().and()
+        .exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint)
+        .and().exceptionHandling().accessDeniedHandler(jwtAccessDeniedHandler);
+
         httpSecurity.headers().frameOptions().disable();
         httpSecurity.addFilterBefore(authenticationFilter, UsernamePasswordAuthenticationFilter.class);
     }
