@@ -1,10 +1,7 @@
 package com.weather.api.service;
 
 import com.weather.api.exception.UserAuthenticationException;
-import com.weather.api.model.AuthenticationResponse;
-import com.weather.api.model.LoginRequest;
-import com.weather.api.model.RegisterRequest;
-import com.weather.api.model.Profile;
+import com.weather.api.model.*;
 import com.weather.api.repository.ProfileRepository;
 import com.weather.api.security.AppJwtTokenUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -102,7 +99,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public void logout(Profile profile) {
-
+    public void logout(LogoutRequest logoutRequest) {
+            jwtTokenUtil.getUsernameFromToken(logoutRequest.getJwtToken());
     }
 }

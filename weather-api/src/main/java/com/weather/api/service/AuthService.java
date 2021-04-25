@@ -1,9 +1,6 @@
 package com.weather.api.service;
 
-import com.weather.api.model.AuthenticationResponse;
-import com.weather.api.model.LoginRequest;
-import com.weather.api.model.RegisterRequest;
-import com.weather.api.model.Profile;
+import com.weather.api.model.*;
 
 import java.util.Optional;
 
@@ -13,7 +10,7 @@ public interface AuthService {
 
     AuthenticationResponse login(LoginRequest loginRequest);
 
-    void logout(Profile profile);
+    void logout(LogoutRequest logoutRequest);
 
     Profile getCurrentUser();
 }
