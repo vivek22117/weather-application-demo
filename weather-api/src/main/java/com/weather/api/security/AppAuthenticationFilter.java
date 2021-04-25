@@ -56,7 +56,7 @@ public class AppAuthenticationFilter extends OncePerRequestFilter {
             return bearerToken.substring(7);
         }
         log.info("BEARER..." + bearerToken);
-        return bearerToken;
+        return null;
     }
 
 
