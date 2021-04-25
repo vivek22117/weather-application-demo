@@ -10,7 +10,6 @@ import com.weather.api.repository.ProfileRepository;
 import com.weather.api.repository.WeatherDataClient;
 import com.weather.api.repository.WeatherDataRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -49,13 +48,8 @@ public class WeatherDataServiceImpl implements WeatherDataService {
             Optional<WeatherData> weatherDataFromDB = weatherDataRepository.getByCityName(cityName);
             if (weatherDataRepository.getByCityName(cityName).isPresent()) {
                 WeatherData weatherData = weatherDataFromDB.get();
-                weatherData.setCityName(weatherDataFromAPI.getCityName());
-                weatherData.setSunset(weatherDataFromAPI.getSunset());
-                weatherData.setWeatherDescription(weatherDataFromAPI.getWeatherDescription());
-                weatherData.setMinTemperature(weatherDataFromAPI.getMinTemperature());
-                weatherData.setMaxTemperature(weatherDataFromAPI.getMaxTemperature());
-                weatherData.setSunrise(weatherDataFromAPI.getSunrise());
-                weatherData.setCurrentTemperature(weatherDataFromAPI.getCurrentTemperature());
+
+                mapWeatherData(weatherDataFromAPI, weatherData);
 
                 weatherData.addProfile(currentUser);
                 currentUser.addWeatherData(weatherData);
@@ -69,13 +63,53 @@ public class WeatherDataServiceImpl implements WeatherDataService {
             }
 
         } catch (WeatherDataNoFoundException ex) {
-            log.error("Error cause while saving or fetching weather data for city: " + cityName);
+            log.error("Error cause while fetching weather data for city: " + cityName);
             throw new WeatherDataNoFoundException(ex.getMessage());
         } catch (Exception ex) {
             log.error("Failed to save weather data in DB");
             throw new BusinessException(ex.getMessage());
         }
         return setWeatherResponse(weatherDataFromAPI, weatherSearchHistory);
+    }
+
+    @Override
+    @Transactional
+    public WeatherResponse getWeatherHistory(String currentUser) {
+        log.debug("Weather history API service layer execution for user {}", currentUser);
+
+        try {
+            Optional<Set<WeatherData>> weatherHistoryByUser =
+                    profileRepository.getWeatherHistoryByUser(currentUser);
+            if (weatherHistoryByUser.isPresent()) {
+                Set<WeatherData> weatherData = weatherHistoryByUser.get();
+
+                return WeatherResponse.builder()
+                        .weatherDataDTO(null)
+                        .weatherDataDTOList(weatherData.stream()
+                                .map(this::mapDTO)
+                                .collect(Collectors.toList())).build();
+            }
+
+        } catch (Exception ex) {
+            log.error("Failed to fetch weather history data in DB");
+            throw new BusinessException(ex.getMessage());
+        }
+        return WeatherResponse.builder().weatherDataDTO(null).weatherDataDTOList(new ArrayList<>()).build();
+    }
+
+    @Override
+    public void deleteWeatherHistory(String cityName, String username) {
+
+    }
+
+    private void mapWeatherData(WeatherData weatherDataFromAPI, WeatherData weatherData) {
+        weatherData.setCityName(weatherDataFromAPI.getCityName());
+        weatherData.setSunset(weatherDataFromAPI.getSunset());
+        weatherData.setWeatherDescription(weatherDataFromAPI.getWeatherDescription());
+        weatherData.setMinTemperature(weatherDataFromAPI.getMinTemperature());
+        weatherData.setMaxTemperature(weatherDataFromAPI.getMaxTemperature());
+        weatherData.setSunrise(weatherDataFromAPI.getSunrise());
+        weatherData.setCurrentTemperature(weatherDataFromAPI.getCurrentTemperature());
     }
 
     private WeatherResponse setWeatherResponse(WeatherData weatherData, Set<WeatherData> weatherSearchHistory) {
@@ -97,10 +131,5 @@ public class WeatherDataServiceImpl implements WeatherDataService {
                 .sunrise(Instant.ofEpochMilli(weatherByCity.getSunrise() * 1000))
                 .sunset(Instant.ofEpochMilli(weatherByCity.getSunset() * 1000))
                 .build();
-    }
-
-    @Override
-    public void deleteWeatherHistory(String request) {
-
     }
 }

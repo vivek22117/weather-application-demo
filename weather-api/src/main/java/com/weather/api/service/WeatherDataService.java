@@ -1,12 +1,13 @@
 package com.weather.api.service;
 
-import com.weather.api.exception.WeatherDataNoFoundException;
 import com.weather.api.model.Profile;
 import com.weather.api.model.WeatherResponse;
 
 public interface WeatherDataService {
 
-    WeatherResponse getWeatherData(String cityname, Profile currentUser) throws WeatherDataNoFoundException;
+    WeatherResponse getWeatherData(String cityName, Profile currentUser);
 
-    void deleteWeatherHistory(String request);
+    WeatherResponse getWeatherHistory(String currentUser);
+
+    void deleteWeatherHistory(String cityName, String username);
 }
