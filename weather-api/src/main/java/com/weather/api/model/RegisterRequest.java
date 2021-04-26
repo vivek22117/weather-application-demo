@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import javax.validation.constraints.NotEmpty;
 
 
 @Data
@@ -12,7 +12,12 @@ import java.util.Date;
 @NoArgsConstructor
 public class RegisterRequest {
 
+    @NotEmpty(message = "User email must not be empty")
     private String username;
+
+    @NotEmpty(message = "Password must not be empty")
     private String password;
+
+    @NotEmpty(message = "DOB must not be empty")
     private String dob;
 }
