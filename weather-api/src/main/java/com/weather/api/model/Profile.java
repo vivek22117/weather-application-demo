@@ -6,22 +6,25 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Past;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
 @Getter
 @Setter
-public class Profile {
+public class Profile implements Serializable {
 
     @Id
-    @Column(unique = true, nullable = false)
+    @Column(unique = true)
     @Email(message = "Please provide valid emailId")
     private String username;
 
-    @Column(nullable = false)
+    @NotEmpty(message = "Password must not be empty")
     private String password;
 
     @Past
@@ -49,5 +52,18 @@ public class Profile {
                 ", password='" + password + '\'' +
                 ", dob=" + dob +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Profile profile = (Profile) o;
+        return username.equals(profile.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username);
     }
 }

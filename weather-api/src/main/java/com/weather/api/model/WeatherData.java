@@ -9,10 +9,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "weather_data")
@@ -69,5 +66,18 @@ public class WeatherData {
                 ", maxTemperature=" + maxTemperature +
                 ", minTemperature=" + minTemperature +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        WeatherData that = (WeatherData) o;
+        return cityName.equals(that.cityName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cityName);
     }
 }
