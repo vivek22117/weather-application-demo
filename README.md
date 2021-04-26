@@ -12,6 +12,8 @@ This project has two modules, backend [weather-api] and frontend [weather-ui].
 > * Weather API Swagger Documentation link: http://localhost:7008/swagger-ui/#/
 > * Frontend Application can be accessed via:  http://localhost:3000/
 > * Backend H2 database can be accessed via: http://localhost:7008/h2-console/login.jsp [username: test, password:test]
+> * Use `local` spring boot profile to run the application
+> * Application log file will be generated in the `log` folder at root directory
 
 
 ## Technologies
@@ -23,3 +25,18 @@ Project is being developed using:
 
 ## Requirement which are not completed:
 * Unit testing
+
+
+## Local testing
+> * Register a new user: `http://localhost:7008/api/auth/signup`
+>   Post API
+> `{
+    "username": "aws",
+    "password": "vivek@2244",
+    "dob": "14-03-1987"
+    }`
+> * Generate jwt token using below api using any API client application [Postman, ARC]
+> `POST API: http://localhost:7008/api/auth/login`
+> `JSON Body: { "username": "ll@gmail.com", "password": "vivek@2244"}`
+> * Use the generated token to make an API call by passing below header:
+> `Authorization: Bearer <TOKEN VALUE>` 
