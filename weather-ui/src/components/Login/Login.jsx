@@ -7,14 +7,14 @@ import axios from "axios";
 import {setUserSession} from "../../Utils/Common";
 
 import styles from './Login.module.css'
-import {Alert} from "../index";
+import {AlertMsg} from "../index";
 
 const Login = ({handleChange, setUserState}) => {
   const history = useHistory();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [alertData, setAlert] = useState({alert: "", isDashboard: false});
+  const [alertData, setAlertMsg] = useState({alert: "", isDashboard: false});
 
   const buttonStyle = {margin: "8px 0"}
 
@@ -32,7 +32,7 @@ const Login = ({handleChange, setUserState}) => {
         .then(res => {
           console.log(res);
           if (!res.data.authenticationToken) {
-            return setAlert({alert: "Authentication failed!", isDashboard: false});
+            return setAlertMsg({alert: "Authentication failed!", isDashboard: false});
           }
           setUserSession(res.data.authenticationToken, res.data.username, res.data.isAuthenticated);
           setUserState(res.data.username, res.data.isAuthenticated, true);
@@ -40,11 +40,11 @@ const Login = ({handleChange, setUserState}) => {
         })
         .catch(err => {
           console.log(err);
-          setAlert({alert: err.response.data, isDashboard: false});
+          setAlertMsg({alert: err.response.data, isDashboard: false});
 
         });
     } else {
-      setAlert({alert: "Please provide valid credentials!", isDashboard: false});
+      setAlertMsg({alert: "Please provide valid credentials!", isDashboard: false});
     }
   };
 
@@ -89,7 +89,7 @@ const Login = ({handleChange, setUserState}) => {
             Sign Up
           </Link>
         </Typography>
-        {alertData.alert !== "" && <Alert alert={alertData} alertStatus={false}/>}
+        {alertData.alert !== "" && <AlertMsg alert={alertData} alertStatus={false}/>}
       </Paper>
     </Grid>
 
