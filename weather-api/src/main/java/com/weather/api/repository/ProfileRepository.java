@@ -4,7 +4,6 @@ import com.weather.api.model.Profile;
 import com.weather.api.model.WeatherData;
 
 import java.util.Optional;
-import java.util.Set;
 
 public interface ProfileRepository {
 
@@ -12,7 +11,7 @@ public interface ProfileRepository {
 
     Optional<Profile> getUserByUsername(String username);
 
-    void updateUser(Profile currentUser);
+    Optional<Profile> getWeatherHistoryByUser(String username);
 
-    Optional<Set<WeatherData>> getWeatherHistoryByUser(String username);
+    Optional<WeatherData> getUserHistoryByCityName(String cityName);
 }
