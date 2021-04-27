@@ -40,3 +40,7 @@ Project is being developed using:
 > `JSON Body: { "username": "ll@gmail.com", "password": "vivek@2244"}`
 > * Use the generated token to make an API call by passing below header:
 > `Authorization: Bearer <TOKEN VALUE>` 
+
+
+## Note
+> Management tab is being used for `Administrator`, for this application all the user are acting as admin.
