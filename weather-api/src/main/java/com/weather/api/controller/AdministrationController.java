@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.stream.Collectors;
 
+import static com.weather.api.util.AppUtility.*;
+
 @RestController
-@RequestMapping(value = "/api/admin")
+@RequestMapping(value = ADMIN_ROOT_API)
 public class AdministrationController {
 
     private final WeatherDataService weatherDataService;
@@ -24,7 +26,7 @@ public class AdministrationController {
 
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @GetMapping(value = "/city/history", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = ADMIN_API_CITY_HISTORY, produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<WeatherHistoryResponse> getWeatherHistoryByUser(@RequestParam(value = "username") String username) {
         return ResponseEntity.status(HttpStatus.OK)
                 .body(WeatherHistoryResponse.builder().cityList(weatherDataService.getWeatherHistory(username)
@@ -33,7 +35,7 @@ public class AdministrationController {
     }
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @GetMapping(value = "/user/history", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = ADMIN_API_USER_HISTORY, produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<ProfileHistoryResponse> getUserHistoryByCity(@RequestParam(value = "city") String city) {
         return ResponseEntity.status(HttpStatus.OK)
                 .body(weatherDataService.getUserHistory(WordUtils.capitalizeFully(city)));
