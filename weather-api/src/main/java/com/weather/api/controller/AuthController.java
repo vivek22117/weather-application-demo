@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+import static com.weather.api.util.AppUtility.*;
+
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping(AUTH_API_ROOT_MAPPING)
 public class AuthController {
 
     private final AuthService authService;
@@ -22,7 +24,7 @@ public class AuthController {
     }
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @PostMapping(value = "/signup", produces = {MediaType.APPLICATION_JSON_VALUE},
+    @PostMapping(value = SIGNUP_AUTH_API, produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<String> signUp(@Valid @RequestBody RegisterRequest request) {
         authService.signup(request);
@@ -31,7 +33,7 @@ public class AuthController {
     }
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @PostMapping(value = "/login", produces = {MediaType.APPLICATION_JSON_VALUE},
+    @PostMapping(value = LOGIN_AUTH_API, produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<AuthenticationResponse> login(@RequestBody LoginRequest loginRequest) {
         AuthenticationResponse authenticationResponse = authService.login(loginRequest);
