@@ -4,6 +4,7 @@ import com.weather.api.model.ProfileHistoryResponse;
 import com.weather.api.model.WeatherDataDTO;
 import com.weather.api.model.WeatherHistoryResponse;
 import com.weather.api.service.WeatherDataService;
+import org.apache.commons.text.WordUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class AdministrationController {
 
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @GetMapping(value = "/weather/history", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/city/history", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<WeatherHistoryResponse> getWeatherHistoryByUser(@RequestParam(value = "username") String username) {
         return ResponseEntity.status(HttpStatus.OK)
                 .body(WeatherHistoryResponse.builder().cityList(weatherDataService.getWeatherHistory(username)
@@ -35,6 +36,6 @@ public class AdministrationController {
     @GetMapping(value = "/user/history", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<ProfileHistoryResponse> getUserHistoryByCity(@RequestParam(value = "city") String city) {
         return ResponseEntity.status(HttpStatus.OK)
-                .body(weatherDataService.getUserHistory(city));
+                .body(weatherDataService.getUserHistory(WordUtils.capitalizeFully(city)));
     }
 }
