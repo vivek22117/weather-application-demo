@@ -1,7 +1,10 @@
 package com.weather.api.service;
 
 import com.weather.api.exception.UserAuthenticationException;
-import com.weather.api.model.*;
+import com.weather.api.model.AuthenticationResponse;
+import com.weather.api.model.LoginRequest;
+import com.weather.api.model.Profile;
+import com.weather.api.model.RegisterRequest;
 import com.weather.api.repository.ProfileRepository;
 import com.weather.api.security.AppJwtTokenUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -14,10 +17,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
 
-import javax.validation.ConstraintViolationException;
 import java.security.InvalidParameterException;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -63,7 +63,6 @@ public class AuthServiceImpl implements AuthService {
             profile.setUsername(request.getUsername());
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
             LocalDate date = LocalDate.parse(request.getDob(), formatter);
-            System.out.println(date);
             profile.setDob(date);
             profile.setPassword(passwordEncoder.encode(request.getPassword()));
 
@@ -96,10 +95,5 @@ public class AuthServiceImpl implements AuthService {
             log.error("Error while login api call" + ex.getMessage());
             throw new UserAuthenticationException("User validation failed, provide valid credentials!");
         }
-    }
-
-    @Override
-    public void logout(LogoutRequest logoutRequest) {
-            jwtTokenUtil.getUsernameFromToken(logoutRequest.getJwtToken());
     }
 }
