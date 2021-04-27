@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.weather.api.exception.ApplicationException;
+import com.weather.api.exception.WeatherDataNoFoundException;
 import com.weather.api.model.WeatherData;
 import com.weather.api.util.AppUtility;
 import lombok.extern.slf4j.Slf4j;
@@ -32,22 +32,26 @@ public class WeatherDataClientImpl implements WeatherDataClient {
     @Override
     public WeatherData getWeatherByCity(String cityName, String username) {
         log.debug("Requesting current weather for {}", cityName);
+        ResponseEntity<String> response = null;
 
-        String uri = AppUtility.WEATHER_ROOT_URL + "q=" + cityName + "&units=metric" + "&appid=" + AppUtility.API_KEY;
+        try {
+            String uri = AppUtility.WEATHER_ROOT_URL + "q=" + cityName + "&units=metric" + "&appid=" + AppUtility.API_KEY;
 
-        HttpHeaders headers = new HttpHeaders();
-        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        headers.setContentType(MediaType.APPLICATION_JSON);
+            HttpHeaders headers = new HttpHeaders();
+            headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
+            headers.setContentType(MediaType.APPLICATION_JSON);
 
-        HttpEntity<String> entity = new HttpEntity<>(headers);
+            HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+            response = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+        } catch (Exception ex) {
+            throw new WeatherDataNoFoundException("No weather data found for city " + cityName);
+        }
 
         return parseResponse(response.getBody()).orElseThrow(new Supplier<RuntimeException>() {
             @Override
             public RuntimeException get() {
-                return new ApplicationException("No weather data found for city " + cityName
-                        + "and request user" + username);
+                return new WeatherDataNoFoundException("No weather data found for city " + cityName);
             }
         });
     }
@@ -61,7 +65,6 @@ public class WeatherDataClientImpl implements WeatherDataClient {
         if (jsonTree.isJsonObject()) {
             JsonObject jsonObject = jsonTree.getAsJsonObject();
             weatherData = new WeatherData();
-//            JsonObject jsonWeatherData = jsonObject.get("name").getAsJsonArray().get(0).getAsJsonObject();
 
             weatherData.setCityName(jsonObject.get("name").getAsString());
             weatherData.setWeatherDescription(jsonObject.get("weather").getAsJsonArray().get(0)
