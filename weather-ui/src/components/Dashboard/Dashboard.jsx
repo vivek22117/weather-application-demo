@@ -21,7 +21,7 @@ import AddBox from '@material-ui/icons/AddBox'
 
 import styles from './Dashboard.module.css';
 
-import {getCurrentUser, getToken, setUserSession} from "../../Utils/Common";
+import {getCurrentUser, getToken} from "../../Utils/Common";
 import {useHistory} from "react-router-dom";
 
 
@@ -95,7 +95,10 @@ const Dashboard = (props) => {
 
   const handleRowDelete = async (oldData, resolve) => {
 
-    axios.delete('api/weather/delete/' + oldData.id, config)
+    console.log(oldData);
+    console.log(resolve);
+
+    axios.delete('api/weather/delete?city=' + oldData.cityName + '&username=' + getCurrentUser(), config)
       .then(res => {
         const dataDelete = [...weatherData];
         const index = oldData.tableData.id;
@@ -104,8 +107,8 @@ const Dashboard = (props) => {
         resolve()
       })
       .catch(error => {
-        console.log(error.response.data)
-        setAlertMsg({alert: error.response.data, isDashboard: true});
+        console.log(error);
+        setAlertMsg({alert: error.message, isDashboard: true});
         resolve()
       })
   };
@@ -124,7 +127,7 @@ const Dashboard = (props) => {
           setQuery("");
         })
         .catch(err => {
-          console.log(err.response.data);
+          console.log(err);
           setAlertMsg({alert: err.response.data, isDashboard: true});
         });
     } else {
