@@ -1,10 +1,11 @@
 import React from "react";
 
-import {Dashboard, Home, Logout, Navbar, SignInOutContainer} from "./components";
+import {Dashboard, Home, Navbar, SignInOutContainer} from "./components";
 import {grey} from "@material-ui/core/colors";
 import {Container} from "@material-ui/core";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import {getCurrentUser, removeUserSession} from "./Utils/Common";
+import {getCurrentUser} from "./Utils/Common";
+import Management from "./components/Management/Management";
 
 const appStyles = {width: "100vw", height: "100vh", backgroundColor: grey};
 
@@ -69,11 +70,17 @@ class App extends React.Component {
                      <Dashboard {...props} isAuthenticated={this.state.isAuthenticated}/>
                    )}
             />
+            <Route exact
+                   path={"/admin"}
+                   render={props => (
+                     <Management {...props} isAuthenticated={this.state.isAuthenticated}/>
+                   )}
+            />
           </Switch>
         </Container>
       </BrowserRouter>
     )
-  }
+  };
 }
 
 export default App;
