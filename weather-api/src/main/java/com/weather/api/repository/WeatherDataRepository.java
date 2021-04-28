@@ -7,11 +7,8 @@ import java.util.Optional;
 
 public interface WeatherDataRepository {
 
-   void save(WeatherData weatherData);
+    void save(WeatherData weatherData);
 
-   Optional<WeatherData> getByCityName(String cityName);
+    Optional<WeatherData> getByCityName(String cityName);
 
-   List<WeatherData> fetchAllWeatherDataByUsername(String username);
-
-   void updateWeatherData(String cityName);
 }

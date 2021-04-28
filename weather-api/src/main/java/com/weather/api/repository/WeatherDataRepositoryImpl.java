@@ -29,16 +29,6 @@ public class WeatherDataRepositoryImpl implements WeatherDataRepository {
         return Optional.ofNullable(getSession().get(WeatherData.class, cityName));
     }
 
-    @Override
-    public List<WeatherData> fetchAllWeatherDataByUsername(String username) {
-        return null;
-    }
-
-    @Override
-    public void updateWeatherData(String cityName) {
-
-    }
-
     private Session getSession() {
         Session session = factory.getCurrentSession();
         if (session == null) {
