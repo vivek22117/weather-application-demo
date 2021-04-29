@@ -2,10 +2,7 @@ package com.weather.api.service;
 
 import com.weather.api.exception.BusinessException;
 import com.weather.api.exception.WeatherDataNoFoundException;
-import com.weather.api.model.Profile;
-import com.weather.api.model.WeatherData;
-import com.weather.api.model.WeatherDataDTO;
-import com.weather.api.model.WeatherResponse;
+import com.weather.api.model.*;
 import com.weather.api.repository.ProfileRepository;
 import com.weather.api.repository.WeatherDataClient;
 import com.weather.api.repository.WeatherDataRepository;
@@ -14,7 +11,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -75,13 +75,13 @@ public class WeatherDataServiceImpl implements WeatherDataService {
     @Override
     @Transactional
     public WeatherResponse getWeatherHistory(String currentUser) {
-        log.debug("Weather history API service layer execution for user {}", currentUser);
+        log.debug("Weather history API execution for user {}", currentUser);
 
         try {
-            Optional<Set<WeatherData>> weatherHistoryByUser =
+            Optional<Profile> weatherHistoryByUser =
                     profileRepository.getWeatherHistoryByUser(currentUser);
             if (weatherHistoryByUser.isPresent()) {
-                Set<WeatherData> weatherData = weatherHistoryByUser.get();
+                Set<WeatherData> weatherData = weatherHistoryByUser.get().getWeather();
 
                 return WeatherResponse.builder()
                         .weatherDataDTO(null)
@@ -98,8 +98,44 @@ public class WeatherDataServiceImpl implements WeatherDataService {
     }
 
     @Override
-    public void deleteWeatherHistory(String cityName, String username) {
+    @Transactional
+    public ProfileHistoryResponse getUserHistory(String cityName) {
+        log.debug("User history API execution for city {}", cityName);
 
+        try {
+            Optional<WeatherData> userHistoryByCityName = profileRepository.getUserHistoryByCityName(cityName);
+            if (userHistoryByCityName.isPresent()) {
+                Set<Profile> profiles = userHistoryByCityName.get().getProfile();
+
+                return ProfileHistoryResponse.builder()
+                        .profileList(profiles.stream()
+                                .map(Profile::getUsername)
+                                .collect(Collectors.toList())).build();
+            }
+
+        } catch (Exception ex) {
+            log.error("Failed to fetch user history data");
+            throw new BusinessException(ex.getMessage());
+        }
+        return ProfileHistoryResponse.builder()
+                .profileList(new ArrayList<>()).build();
+    }
+
+    @Override
+    @Transactional
+    public void deleteWeatherHistory(String cityName, String username) {
+        Optional<Profile> userByUsername = profileRepository.getUserByUsername(username);
+        if (userByUsername.isPresent()) {
+            Profile profile = userByUsername.get();
+            Optional<WeatherData> byCityName = weatherDataRepository.getByCityName(cityName);
+            if (byCityName.isPresent()) {
+                WeatherData weatherData = byCityName.get();
+                weatherData.removeProfile(profile);
+                profile.removeWeatherData(weatherData);
+            }
+
+        }
+        log.debug("successfully removed!");
     }
 
     private void mapWeatherData(WeatherData weatherDataFromAPI, WeatherData weatherData) {
