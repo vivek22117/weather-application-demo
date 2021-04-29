@@ -40,7 +40,7 @@ const Login = ({handleChange, setUserState}) => {
         })
         .catch(err => {
           console.log(err);
-          setAlertMsg({alert: err.response.data, isDashboard: false});
+          setAlertMsg({alert: err.message, isDashboard: false});
 
         });
     } else {
