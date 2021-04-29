@@ -21,8 +21,10 @@ const Signup = ({props}) => {
 
   let alertMsg;
 
-  if (alertData.alert === "") {
-    alertMsg = <Alert severity="success">User registration is successful!</Alert>;
+  if (alertData.alert === "Success") {
+    alertMsg = <Alert severity="success">User registration is successful!</Alert>
+  } else {
+    alertMsg = <AlertMsg alert={alertData}/>
   }
 
 
@@ -39,15 +41,12 @@ const Signup = ({props}) => {
       axios.post('api/auth/signup', data)
         .then(res => {
           console.log(res.data);
+          setAlertMsg({alert: "Success", isDashboard: false});
           history.push('/manage-user');
         })
         .catch(err => {
           console.log(err.response)
-          if (!err.response.data.more) {
-            setAlertMsg({alert: err.response.data, isDashboard: false});
-          } else {
-            setAlertMsg({alert: "Please re-check the input parameters!", isDashboard: false});
-          }
+          setAlertMsg({alert: err.message, isDashboard: false});
 
         });
     } else {
@@ -91,8 +90,8 @@ const Signup = ({props}) => {
           <Button type={"submit"} color={"primary"} variant={"contained"} style={buttonStyle}
                   onClick={(event) => onSubmit(event)}
                   fullWidth>SIGN UP</Button>
-          {alertMsg}
         </form>
+        {alertData.alert !== "" && alertMsg}
       </Paper>
     </Grid>
   );
