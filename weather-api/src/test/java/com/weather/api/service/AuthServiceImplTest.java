@@ -1,11 +1,13 @@
 package com.weather.api.service;
 
 import com.weather.api.model.Profile;
+import com.weather.api.model.RegisterRequest;
 import com.weather.api.repository.ProfileRepository;
 import com.weather.api.security.AppJwtTokenUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 import org.mockito.*;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;
@@ -15,6 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -35,6 +38,8 @@ class AuthServiceImplTest {
 
     @Mock
     private Authentication authentication;
+
+    private ArgumentCaptor<Profile> profileArgumentCaptor;
 
     @BeforeEach
     void setUp() {
@@ -61,6 +66,15 @@ class AuthServiceImplTest {
 
     @Test
     void signup() {
+
+        Mockito.doNothing().when(profileRepository).saveUser(ArgumentMatchers.any(Profile.class));
+
+        Assertions.assertThrows(IllegalArgumentException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                authService.signup(new RegisterRequest(null, "vivek@2244", "2020-11-11"));
+            }
+        });
     }
 
     @Test
