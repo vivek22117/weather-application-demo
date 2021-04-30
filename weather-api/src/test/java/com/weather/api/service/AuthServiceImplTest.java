@@ -1,5 +1,6 @@
 package com.weather.api.service;
 
+import com.weather.api.model.LoginRequest;
 import com.weather.api.model.Profile;
 import com.weather.api.model.RegisterRequest;
 import com.weather.api.repository.ProfileRepository;
@@ -67,7 +68,7 @@ class AuthServiceImplTest {
 
     @Test
     @DisplayName(value = "Should successfully register new user")
-    void shouldSignupWithValidParameters() {
+    public void shouldSignupWithValidParameters() {
         Mockito.doNothing().when(profileRepository).saveUser(ArgumentMatchers.any(Profile.class));
 
         Assertions.assertThrows(IllegalArgumentException.class, new Executable() {
@@ -80,7 +81,7 @@ class AuthServiceImplTest {
 
     @Test
     @DisplayName(value = "Should fail when request parameters are invalid")
-    void shouldSignupWithInvalidParameters() {
+    public void shouldSignupWithInvalidParameters() {
         Mockito.doNothing().when(profileRepository).saveUser(ArgumentMatchers.any(Profile.class));
 
         Assertions.assertThrows(IllegalArgumentException.class, new Executable() {
@@ -89,6 +90,13 @@ class AuthServiceImplTest {
                 authService.signup(new RegisterRequest("vivek@gmail.com", "vivek@2244", "20-11-11"));
             }
         });
+    }
+
+    @Test
+    public void shouldLoginWithValidCredentials() {
+        Mockito.when(authenticationManager.authenticate(ArgumentMatchers.any())).thenReturn(authentication);
+
+        authService.login(new LoginRequest("vivek@gmail.com", "vivek@2244"));
     }
 
     @Test
