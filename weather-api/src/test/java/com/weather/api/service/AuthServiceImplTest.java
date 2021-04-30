@@ -6,6 +6,7 @@ import com.weather.api.repository.ProfileRepository;
 import com.weather.api.security.AppJwtTokenUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 import org.mockito.*;
@@ -50,7 +51,7 @@ class AuthServiceImplTest {
     }
 
     @Test
-    void getCurrentUser() {
+    void shouldGetCurrentUser() {
         Profile profile = new Profile();
         profile.setUsername("vivek@gmail.com");
         profile.setPassword("vivek@2244");
@@ -65,8 +66,21 @@ class AuthServiceImplTest {
     }
 
     @Test
-    void signup() {
+    @DisplayName(value = "Should successfully register new user")
+    void shouldSignupWithValidParameters() {
+        Mockito.doNothing().when(profileRepository).saveUser(ArgumentMatchers.any(Profile.class));
 
+        Assertions.assertThrows(IllegalArgumentException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                authService.signup(new RegisterRequest("vivek@gmail.com", "vivek@2244", "2020-11-11"));
+            }
+        });
+    }
+
+    @Test
+    @DisplayName(value = "Should fail when request parameters are invalid")
+    void shouldSignupWithInvalidParameters() {
         Mockito.doNothing().when(profileRepository).saveUser(ArgumentMatchers.any(Profile.class));
 
         Assertions.assertThrows(IllegalArgumentException.class, new Executable() {
