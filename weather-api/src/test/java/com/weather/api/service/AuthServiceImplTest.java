@@ -72,7 +72,7 @@ class AuthServiceImplTest {
         Assertions.assertThrows(IllegalArgumentException.class, new Executable() {
             @Override
             public void execute() throws Throwable {
-                authService.signup(new RegisterRequest(null, "vivek@2244", "2020-11-11"));
+                authService.signup(new RegisterRequest("vivek@gmail.com", "vivek@2244", "20-11-11"));
             }
         });
     }
