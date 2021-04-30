@@ -31,9 +31,9 @@ Project is being developed using:
 > * Register a new user: `http://localhost:7008/api/auth/signup`
 >   Post API
 > `{
-    "username": "aws",
+    "username": "aws@gmail.com",
     "password": "vivek@2244",
-    "dob": "14-03-1987"
+    "dob": "1987-03-14"
     }`
 > * Generate jwt token using below api using any API client application [Postman, ARC]
 > `POST API: http://localhost:7008/api/auth/login`
