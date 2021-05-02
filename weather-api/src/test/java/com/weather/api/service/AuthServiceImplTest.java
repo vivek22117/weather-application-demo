@@ -1,5 +1,7 @@
 package com.weather.api.service;
 
+import com.weather.api.exception.UserAuthenticationException;
+import com.weather.api.model.AuthenticationResponse;
 import com.weather.api.model.LoginRequest;
 import com.weather.api.model.Profile;
 import com.weather.api.model.RegisterRequest;
@@ -95,11 +97,14 @@ class AuthServiceImplTest {
     @Test
     public void shouldLoginWithValidCredentials() {
         Mockito.when(authenticationManager.authenticate(ArgumentMatchers.any())).thenReturn(authentication);
+        Mockito.when(appJwtTokenUtil.generateTokenWithUsername(ArgumentMatchers.anyString())).thenReturn("Dummy-TOken");
 
-        authService.login(new LoginRequest("vivek@gmail.com", "vivek@2244"));
+        AuthenticationResponse login = authService.login(new LoginRequest("vivek@gmail.com", "vivek@2244"));
+
+        Assertions.assertNotNull(login);
+        Assertions.assertEquals(login.getUsername(), "vivek@gmail.com");
     }
 
-    @Test
-    void login() {
-    }
+
+
 }
