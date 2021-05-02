@@ -105,6 +105,23 @@ class AuthServiceImplTest {
         Assertions.assertEquals(login.getUsername(), "vivek@gmail.com");
     }
 
+    @Test
+    public void shouldThrowExceptionWhenLoginWithWrongCredentials() {
+        Mockito.when(authenticationManager.authenticate(ArgumentMatchers.any())).thenReturn(null);
+        Mockito.when(appJwtTokenUtil.generateTokenWithUsername(ArgumentMatchers.anyString())).thenReturn("Dummy-TOken");
+
+        UserAuthenticationException exception = assertThrows(UserAuthenticationException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                authService.login(new LoginRequest("vivek@gmail.com", "vivek@2244"));
+            }
+        });
+
+        String expectedMessage = "User validation failed, provide valid credentials!";
+        String actualMessage = exception.getMessage();
+
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
+    }
 
 
 }
