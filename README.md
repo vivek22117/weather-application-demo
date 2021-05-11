@@ -26,8 +26,21 @@ Project is being developed using:
 ## Requirement which are not completed:
 * Unit testing
 
+## Testing via ReactJS 
+> Start react application using `npm start` command from `weather-ui` module
+> The npm start command will take around 3-5 minutes to start
+> Home Page without login: 
+## Login Page
+![Login Page](./images/Home_Page_Without_login.JPG)
 
-## Local testing
+## SignUp or SignIn Page:
+![SignUp Or SignIn Page](./images/Login_Or_SignUp_Screen.JPG)
+
+## Swagger API Document Link: `http://localhost:7008/swagger-ui/#/`
+![Swagger Doc Image](./images/Swagger_API_doc.JPG)
+
+
+## Local testing via PostMan
 > * Register a new user: `http://localhost:7008/api/auth/signup`
 >   Post API
 > `{
