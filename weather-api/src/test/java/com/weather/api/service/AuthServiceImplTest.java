@@ -73,12 +73,8 @@ class AuthServiceImplTest {
     public void shouldSignupWithValidParameters() {
         Mockito.doNothing().when(profileRepository).saveUser(ArgumentMatchers.any(Profile.class));
 
-        Assertions.assertThrows(IllegalArgumentException.class, new Executable() {
-            @Override
-            public void execute() throws Throwable {
-                authService.signup(new RegisterRequest("vivek@gmail.com", "vivek@2244", "2020-11-11"));
-            }
-        });
+        authService.signup(new RegisterRequest("vivek@gmail.com", "vivek@2244", "2020-11-11"));
+
     }
 
     @Test
