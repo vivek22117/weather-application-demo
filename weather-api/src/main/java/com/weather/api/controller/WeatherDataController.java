@@ -9,6 +9,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
+
 import static com.weather.api.util.AppUtility.*;
 
 @RestController
@@ -49,10 +51,9 @@ public class WeatherDataController {
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @DeleteMapping(value = WEATHER_DELETE_ALL_API, produces = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseEntity<String> deleteAllWeatherData(@RequestParam(value = "city") String city,
-                                                    @RequestParam(value = "username") String username) {
-        weatherDataService.deleteWeatherHistory(city, username);
+    public ResponseEntity<String> deleteAllWeatherData(@PathVariable String username) {
+        weatherDataService.deleteUserHistory(username);
         return ResponseEntity.status(HttpStatus.OK)
-                .body("Weather history for city " + city + " against user " + username + "is deleted successfully!");
+                .body("Weather history against user " + username + "is deleted successfully!");
     }
 }
