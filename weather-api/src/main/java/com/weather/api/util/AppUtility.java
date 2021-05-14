@@ -19,6 +19,7 @@ public class AppUtility {
     public static final String WEATHER_CITY_API = "/{city}";
     public static final String WEATHER_HISTORY_API = "/history";
     public static final String WEATHER_DELETE_API = "/delete";
+    public static final String WEATHER_DELETE_ALL_API = "/deleteAll";
 
 
 }

@@ -46,4 +46,13 @@ public class WeatherDataController {
         return ResponseEntity.status(HttpStatus.OK)
                 .body("Weather history for city " + city + " against user " + username + "is deleted successfully!");
     }
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @DeleteMapping(value = WEATHER_DELETE_ALL_API, produces = {MediaType.APPLICATION_JSON_VALUE})
+    public ResponseEntity<String> deleteAllWeatherData(@RequestParam(value = "city") String city,
+                                                    @RequestParam(value = "username") String username) {
+        weatherDataService.deleteWeatherHistory(city, username);
+        return ResponseEntity.status(HttpStatus.OK)
+                .body("Weather history for city " + city + " against user " + username + "is deleted successfully!");
+    }
 }
