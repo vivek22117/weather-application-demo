@@ -138,6 +138,18 @@ public class WeatherDataServiceImpl implements WeatherDataService {
         log.debug("successfully removed!");
     }
 
+    @Override
+    @Transactional
+    public void deleteUserHistory(String username) {
+        Optional<Profile> userByUsername = profileRepository.getUserByUsername(username);
+        if (userByUsername.isPresent()) {
+            Profile profile = userByUsername.get();
+            profile.getWeather().clear();
+
+        }
+        log.debug("successfully delete history for user: " + username);
+    }
+
     private void mapWeatherData(WeatherData weatherDataFromAPI, WeatherData weatherData) {
         weatherData.setCityName(weatherDataFromAPI.getCityName());
         weatherData.setSunset(weatherDataFromAPI.getSunset());
