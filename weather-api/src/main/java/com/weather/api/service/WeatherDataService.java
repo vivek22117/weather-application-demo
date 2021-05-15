@@ -13,4 +13,6 @@ public interface WeatherDataService {
     ProfileHistoryResponse getUserHistory(String cityName);
 
     void deleteWeatherHistory(String cityName, String username);
+
+    void deleteUserHistory(String username);
 }
