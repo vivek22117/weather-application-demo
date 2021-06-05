@@ -11,6 +11,26 @@ variable "default_region" {
   description = "AWS region to deploy resources"
 }
 
+
+#################################
+# ECR Variables                 #
+#################################
+variable "enabled" {
+  type        = bool
+  description = "True will allow to create ECR"
+}
+
+variable "repo_name" {
+  type        = string
+  description = "ECR repository name"
+}
+
+variable "max_image_count" {
+  type        = number
+  description = "Total number of images allowed in ECR"
+}
+
+
 ######################################################
 # Local variables defined                            #
 ######################################################
