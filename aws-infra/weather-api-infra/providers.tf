@@ -52,18 +52,3 @@ terraform {
 
 # used for accessing Account ID and ARN
 data "aws_caller_identity" "current" {}
-
-
-######################################################
-# Terraform configuration block is used to define backend
-# Interpolation syntax is not allowed in Backend
-######################################################
-terraform {
-  required_version = ">= 0.13" // Terraform version
-
-  backend "s3" {
-    profile        = "admin"
-    region         = "us-east-1"
-    encrypt        = "true"
-  }
-}
