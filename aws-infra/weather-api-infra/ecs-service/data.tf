@@ -34,7 +34,7 @@ data "terraform_remote_state" "ecs-cluster" {
   }
 }
 
-data "terraform_remote_state" "config_server_ecr_state" {
+data "terraform_remote_state" "weather_api_ecr_state" {
   backend = "s3"
 
   config = {
@@ -63,7 +63,7 @@ data "template_file" "config_server_task" {
   template = file("${path.module}/tasks/config-server-task.json")
 
   vars = {
-    config_server_image = data.terraform_remote_state.config_server_ecr_state.outputs.ecr_registry_url
+    weather_api_image = data.terraform_remote_state.weather_api_ecr_state.outputs.ecr_registry_url
     log_group           = data.terraform_remote_state.ecs-cluster.outputs.ecs-cluster-log-group
     aws_region          = var.default_region
   }
