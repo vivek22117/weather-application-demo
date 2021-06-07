@@ -48,6 +48,16 @@ variable "default_target_group_port" {
   description = "Target group port for ECS Cluster"
 }
 
+#################################
+#  Default Variables            #
+#################################
+variable "s3_bucket_prefix" {
+  type        = string
+  description = "S3 deployment bucket prefix"
+  default     = "doubledigit-tfstate"
+}
+
+
 ####################################
 # Local variables                  #
 ####################################
