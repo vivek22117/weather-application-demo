@@ -1,0 +1,23 @@
+[
+  {
+    "Image": "${weather_api_image}:latest",
+    "Memory": 256,
+    "Name": "weather-api",
+    "cpu": 256,
+    "LogConfiguration": {
+      "LogDriver": "awslogs",
+      "Options": {
+        "awslogs-group": "${log_group}",
+        "awslogs-stream-prefix": "config-server-app",
+        "awslogs-region": "${aws_region}"
+      }
+    },
+    "PortMappings": [
+      {
+        "ContainerPort": 8001,
+        "Protocol": "tcp",
+        "hostPort": 0
+      }
+    ]
+  }
+]
