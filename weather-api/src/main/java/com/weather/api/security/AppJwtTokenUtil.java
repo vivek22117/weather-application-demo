@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.security.*;
+import java.security.KeyPair;
 import java.util.Date;
 
 import static com.weather.api.util.AppUtility.JWT_TOKEN_VALIDITY;
