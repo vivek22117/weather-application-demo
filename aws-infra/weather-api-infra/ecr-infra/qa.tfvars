@@ -1,4 +1,4 @@
-team     = "DD-Team"
+team           = "DD-Team"
 default_region = "us-east-1"
 
 enabled         = true
