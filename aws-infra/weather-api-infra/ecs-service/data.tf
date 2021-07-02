@@ -64,8 +64,8 @@ data "template_file" "config_server_task" {
 
   vars = {
     weather_api_image = data.terraform_remote_state.weather_api_ecr_state.outputs.ecr_registry_url
-    log_group           = data.terraform_remote_state.ecs-cluster.outputs.ecs-cluster-log-group
-    aws_region          = var.default_region
+    log_group         = data.terraform_remote_state.ecs-cluster.outputs.ecs-cluster-log-group
+    aws_region        = var.default_region
   }
 }
 
