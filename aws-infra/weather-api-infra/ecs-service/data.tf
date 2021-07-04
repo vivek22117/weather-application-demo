@@ -59,8 +59,8 @@ data "template_file" "ecs_task_policy_template" {
   }
 }
 
-data "template_file" "config_server_task" {
-  template = file("${path.module}/tasks/config-server-task.json")
+data "template_file" "weather_api_task" {
+  template = file("${path.module}/tasks/weather-api-task.json")
 
   vars = {
     weather_api_image = data.terraform_remote_state.weather_api_ecr_state.outputs.ecr_registry_url
