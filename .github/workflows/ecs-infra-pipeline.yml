@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'ECS Cluster'
+        description: 'ECS Service'
         required: false
         default: 'initiate'
       action:
@@ -24,7 +24,7 @@ env:
 
 jobs:
   terraform:
-    name: 'Weather-API-ECS-Cluster-Deployment-Pipeline-${{ github.event.inputs.action }}'
+    name: 'Weather-API-ECS-Service-Deployment-Pipeline-${{ github.event.inputs.action }}'
     runs-on: ubuntu-latest
 
     defaults:
