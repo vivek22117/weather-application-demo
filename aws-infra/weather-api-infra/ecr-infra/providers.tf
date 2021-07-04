@@ -43,7 +43,6 @@ terraform {
 
 
   backend "s3" {
-    profile = "admin"
     region  = "us-east-1"
     encrypt = "true"
   }
