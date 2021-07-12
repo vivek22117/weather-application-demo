@@ -28,8 +28,8 @@ resource "aws_ecs_service" "weather_api_ecs_service" {
 
   load_balancer {
     target_group_arn = aws_lb_target_group.weather_api_ecs_alb_tg.arn
-    container_name   = "Config-Server"
-    container_port   = 9001
+    container_name   = "Weather-API"
+    container_port   = 8001
   }
 }
 
