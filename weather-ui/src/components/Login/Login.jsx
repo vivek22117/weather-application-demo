@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import {Avatar, Button, FormControlLabel, Grid, Link, Paper, TextField, Typography} from '@material-ui/core';
 import LockOutLinedIcon from '@material-ui/icons/LockOutlined';
 import Checkbox from '@material-ui/core/Checkbox';

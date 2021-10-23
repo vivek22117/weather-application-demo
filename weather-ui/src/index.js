@@ -5,6 +5,11 @@ import App from './App';
 
 import axios from "axios";
 
-axios.defaults.baseURL = 'http://localhost:7008/'
+axios.defaults.baseURL = 'http://localhost:8001/'
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
