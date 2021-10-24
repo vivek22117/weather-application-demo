@@ -29,31 +29,34 @@ Project is being developed using:
 ## Testing via ReactJS 
 > Start react application using `npm start` command from `weather-ui` module
 > The npm start command will take around 3-5 minutes to start
-> Home Page without login: 
+> the application on port. Access link `http://localhost:5000`: 
 ## Login Page
 ![Login Page](./images/Home_Page_Without_login.JPG)
 
 ## SignUp or SignIn Page:
 ![SignUp Or SignIn Page](./images/Login_Or_SignUp_Screen.JPG)
 
-## Swagger API Document Link: `http://localhost:7008/swagger-ui/#/`
+## Swagger API Document Link: `http://localhost:8001/swagger-ui/#/`
 ![Swagger Doc Image](./images/Swagger_API_doc.JPG)
 
 
 ## Local testing via PostMan
-> * Register a new user: `http://localhost:7008/api/auth/signup`
->   Post API
-> `{
+> * Register a new user [POST API]: `http://localhost:8001/api/auth/signup`
+ ```
+{
     "username": "aws@gmail.com",
-    "password": "vivek@2244",
+    "password": "abcd@1234",
     "dob": "1987-03-14"
-    }`
+}
+```
 > * Generate jwt token using below api using any API client application [Postman, ARC]
-> `POST API: http://localhost:7008/api/auth/login`
-> `JSON Body: { "username": "ll@gmail.com", "password": "vivek@2244"}`
+``` 
+POST API: http://localhost:8001/api/auth/login
+JSON Body: { "username": "ll@gmail.com", "password": "abcd@1234"}
+```
 > * Use the generated token to make an API call by passing below header:
 > `Authorization: Bearer <TOKEN VALUE>` 
 
 
 ## Note
-> Management tab is being used for `Administrator`, for this application all the user are acting as admin.
+> Management tab is being used for `Administrator`, for this application all the registered user will be considered as admin.
