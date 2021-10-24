@@ -59,4 +59,18 @@ JSON Body: { "username": "ll@gmail.com", "password": "abcd@1234"}
 
 
 ## Note
-> Management tab is being used for `Administrator`, for this application all the registered user will be considered as admin.
+> Management tab is being used for `Administration`, for this application all the registered user will be considered as admin.
+
+
+<!-- CONTACT -->
+## Contact
+
+Vivek Mishra - [@linkedin](https://www.linkedin.com/in/vivek-mishra-22aa44bb55cc/) - vivekkmishra2020@gmail.com
+
+
+<!-- GitHub Stats -->
+## My GitHub Statistics
+
+![Vivek Mishra github stats](https://github-readme-stats.vercel.app/api?username=vivek22117&show_icons=true&theme=tokyonight)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=vivek22117&theme=tokyonight" alt="mystreak"/>
+![Vivek's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vivek22117&theme=tokyonight&layout=compact)
