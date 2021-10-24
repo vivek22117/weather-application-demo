@@ -3,7 +3,8 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Requirements not completed](#requirement-which-are-not-completed)
+* [Local Testing](#local-testing-via-postman)
+* [GitHub Statistics](#my-github-statistics)
 
 
 
