@@ -18,13 +18,11 @@ This project has two modules, backend [weather-api] and frontend [weather-ui].
 
 ## Technologies
 Project is being developed using:
-* Java8 & Spring Boot backend API
-* H2 as backend database
+* Java8 & Spring Boot for backend API
+* H2 for backend Database
 * Swagger for API documentation
 * ReactJS for frontend  
 
-## Requirement which are not completed:
-* Unit testing
 
 ## Testing via ReactJS 
 > Start react application using `npm start` command from `weather-ui` module
