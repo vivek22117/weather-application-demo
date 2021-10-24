@@ -9,9 +9,9 @@
 
 ## General info
 This project has two modules, backend [weather-api] and frontend [weather-ui].
-> * Weather API Swagger Documentation link: http://localhost:7008/swagger-ui/#/
-> * Frontend Application can be accessed via:  http://localhost:3000/
-> * Backend H2 database can be accessed via: http://localhost:7008/h2-console/login.jsp [username: test, password:test]
+> * Weather API Swagger Documentation link: http://localhost:8001/swagger-ui/#/
+> * Frontend Application can be accessed via:  http://localhost:5000/
+> * Backend H2 database can be accessed via: http://localhost:8001/h2-console/login.jsp [username: test, password:test]
 > * Use `local` spring boot profile to run the application
 > * Application log file will be generated in the `log` folder at root directory
 
