@@ -28,16 +28,21 @@ public class AdministrationController {
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping(value = ADMIN_API_CITY_HISTORY, produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<WeatherHistoryResponse> getWeatherHistoryByUser(@RequestParam(value = "username") String username) {
-        return ResponseEntity.status(HttpStatus.OK)
+        return ResponseEntity
+                .status(HttpStatus.OK)
                 .body(WeatherHistoryResponse.builder().cityList(weatherDataService.getWeatherHistory(username)
-                        .getWeatherDataDTOList().stream()
-                        .map(WeatherDataDTO::getCityName).collect(Collectors.toList())).build());
+                        .getWeatherDataDTOList()
+                        .stream()
+                        .map(WeatherDataDTO::getCityName)
+                        .collect(Collectors.toList()))
+                        .build());
     }
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping(value = ADMIN_API_USER_HISTORY, produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<ProfileHistoryResponse> getUserHistoryByCity(@RequestParam(value = "city") String city) {
-        return ResponseEntity.status(HttpStatus.OK)
+        return ResponseEntity
+                .status(HttpStatus.OK)
                 .body(weatherDataService.getUserHistory(WordUtils.capitalizeFully(city)));
     }
 }
