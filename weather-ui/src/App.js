@@ -22,7 +22,7 @@ class App extends React.Component {
   componentDidMount() {
     const user = getCurrentUser();
 
-    console.log("user is:" + user);
+    console.log("user information:" + user);
 
     if (user) {
       this.setUserState(user, true, true);
