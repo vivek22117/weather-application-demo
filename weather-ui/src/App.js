@@ -19,17 +19,15 @@ class App extends React.Component {
       showAdminPage: false
     };
   }
-
   componentDidMount() {
     const user = getCurrentUser();
 
-    console.log(user);
+    console.log("user is:" + user);
 
     if (user) {
       this.setUserState(user, true, true);
     }
   };
-
 
   setUserState = (user, isAuthenticate, showAdminPage) => {
     this.setState({
